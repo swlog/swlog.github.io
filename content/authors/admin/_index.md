@@ -10,7 +10,7 @@ role: 전북대학교/컴퓨터공학과
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 💻
 
 # Organizations/Affiliations
 #organizations:
