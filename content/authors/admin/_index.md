@@ -72,4 +72,4 @@ social:
 관심 분야는 인공지능 응용, 분산 시스템, DevOps 자동화이며  
 기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
