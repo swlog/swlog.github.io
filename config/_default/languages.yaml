@@ -27,7 +27,7 @@ ko:
   weight: 1
   params:
     description: "전북대학교 컴퓨터인공지능학부 최서원의 블로그입니다."
-    author: "최서원"
+    author: admin
 
 en:
   languageCode: en
@@ -36,4 +36,4 @@ en:
   weight: 2
   params:
     description: "Seowon Choi's personal portfolio and AI projects."
-    author: "Seowon Choi"
+    author: admin
