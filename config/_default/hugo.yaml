@@ -75,3 +75,6 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+features:
+  search: true
+  
