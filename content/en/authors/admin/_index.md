@@ -6,7 +6,7 @@ title: choi seo won
 superuser: true
 
 # Role/position
-role: 전북대학교/컴퓨터공학과
+role: Jeonbuk National University / Department of Computer Engineering
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 전북대학교 컴퓨터인공지능학부 학생으로, 클라우드 컴퓨팅에 관심이 있습니다!
+bio: I’m a Computer Engineering student at Jeonbuk National University with a strong interest in cloud computing.
 
 #interests:
 #- Artificial Intelligence
