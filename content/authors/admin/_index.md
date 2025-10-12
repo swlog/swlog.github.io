@@ -50,7 +50,7 @@ social:
     link: https://github.com/swlog/swlog.github.io
   - icon: instagram
     icon_pack: fab
-    link: https://instagram.com/geocushen
+    link: https://www.instagram.com/seo._.w0n/
 # Uncomment below for Github link
 #- icon: github
 #  icon_pack: fab
