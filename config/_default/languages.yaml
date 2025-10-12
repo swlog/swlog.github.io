@@ -6,7 +6,7 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: "SWLOG Blog"
+  title: "CHOISEOWON PORTFOLIO"
   weight: 2
   params:
     description: "Seowon Choi's personal portfolio and AI projects."
@@ -29,9 +29,9 @@ en:
 ko:
   languageCode: ko
   contentDir: content/ko
-  title: "SWLOG 블로그"
+  title: "최서원의 포트폴리오"
   weight: 1
   params:
-    description: "전북대학교 컴퓨터인공지능학부 최서원의 블로그입니다."
+    description: "전북대학교 컴퓨터공학부 최서원의 블로그입니다."
     author: admin
 
