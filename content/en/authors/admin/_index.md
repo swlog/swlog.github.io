@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 최서원
+title: choi seo won
 
 # Is this the primary user of the site?
 superuser: true
