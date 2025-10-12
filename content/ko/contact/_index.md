@@ -1,4 +1,4 @@
-# Contact
+# 문의
 
 
 📧 [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
