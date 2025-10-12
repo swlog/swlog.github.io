@@ -44,7 +44,7 @@ bio: 전북대학교 컴퓨터인공지능학부 학생으로, 클라우드 컴�
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'about/#contact' # For a direct email link, use "mailto:test@example.org".
+    link: 'mailto:selapina03@jbnu.ac.kr' # For a direct email link, use "mailto:test@example.org".
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/wowchemy
