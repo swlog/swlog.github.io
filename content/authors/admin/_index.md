@@ -6,7 +6,7 @@ title: 최서원
 superuser: true
 
 # Role/position
-role: ''
+role: 전북대학교/컴퓨터공학과
 
 # Status emoji
 status:
