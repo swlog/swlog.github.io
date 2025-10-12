@@ -1,25 +1,27 @@
----
-title: "연락처"
+title: "Contact"
 type: widget_page
 ---
 
-# 📞 연락처
+# 📞 Contact
 
-전북대학교 **의료 AI 및 계산 수학 연구실 (MacsLAB)** 에서  
-학부연구생 또는 석사과정 참여에 관심이 있으시다면 아래 연락처로 문의 바랍니다.  
+If you are interested in joining the **Medical AI & Computational Science Laboratory (MacsLAB)** at **Jeonbuk National University**,  
+please contact us using the information below.  
 
-현재 **학부연구생 (연구/개발)** 포지션을 **2025년 7월부터** 모집 중입니다.
-
----
-
-📧 **이메일:** [ksl@jbnu.ac.kr](mailto:ksl@jbnu.ac.kr)  
-📞 **전화번호:** [+82-63-270-2406](tel:+82632702406)  
-📍 **주소:**  
-전북대학교 공과대학 7호관 626호  
-전라북도 전주시 덕진구 백제대로 567 (54896)
+We are currently recruiting **undergraduate research assistants (Research / Development)** starting from **July 2025**.
 
 ---
 
-## 🗺️ 오시는 길
+📧 **Email:** [ksl@jbnu.ac.kr](mailto:ksl@jbnu.ac.kr)  
+☎ **Phone:** [+82-63-270-2406](tel:+82632702406)  
+📍 **Address:** Room 626, Building 7, College of Engineering, Jeonbuk National University, Jeonju, Jeollabuk-do 54896, Republic of Korea  
 
-{{< map latitude="35.8465" longitude="127.1292" zoom="16" >}}
+---
+
+## 🗺️ Location
+
+<iframe 
+  src="https://www.openstreetmap.org/export/embed.html?bbox=127.1242%2C35.8435%2C127.1342%2C35.8495&layer=mapnik&marker=35.8465%2C127.1292" 
+  style="border:1px solid #ccc; width:100%; height:400px; border-radius: 10px;" 
+  allowfullscreen 
+  loading="lazy">
+</iframe>
