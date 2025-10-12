@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio:전북대학교 컴퓨터인공지능학부 학생으로, 오픈소스 SW 해커톤 기획과 클라우드 컴퓨팅에 관심이 있습니다.
 
 #interests:
 #- Artificial Intelligence
