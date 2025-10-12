@@ -1,19 +1,9 @@
-title: "Contact"
-type: widget_page
+# Contact
 ---
 
-# 📞 Contact
-
-If you are interested in joining the **Medical AI & Computational Science Laboratory (MacsLAB)** at **Jeonbuk National University**,  
-please contact us using the information below.  
-
-We are currently recruiting **undergraduate research assistants (Research / Development)** starting from **July 2025**.
-
----
-
-📧 **Email:** [ksl@jbnu.ac.kr](mailto:ksl@jbnu.ac.kr)  
-☎ **Phone:** [+82-63-270-2406](tel:+82632702406)  
-📍 **Address:** Room 626, Building 7, College of Engineering, Jeonbuk National University, Jeonju, Jeollabuk-do 54896, Republic of Korea  
+📧 [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
+☎  [+82-10-9548-9976](tel:+821095489976)  
+📍 전북대학교 공과대학 7호관 626호, 전주시, 전라북도 54896  
 
 ---
 
@@ -21,6 +11,7 @@ We are currently recruiting **undergraduate research assistants (Research / Deve
 
 <iframe 
   src="https://www.openstreetmap.org/export/embed.html?bbox=127.1242%2C35.8435%2C127.1342%2C35.8495&layer=mapnik&marker=35.8465%2C127.1292" 
+  title="전북대학교 공과대학 7호관"
   style="border:1px solid #ccc; width:100%; height:400px; border-radius: 10px;" 
   allowfullscreen 
   loading="lazy">
