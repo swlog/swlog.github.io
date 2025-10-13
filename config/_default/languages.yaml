@@ -6,11 +6,30 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: "CHOISEOWON PORTFOLIO"
+  title: "CHOISEOWON'S PORTFOLIO"
   weight: 2
   params:
     description: "Seowon Choi's personal portfolio and AI projects."
     author: admin
+    en:
+  languageCode: en-us
+  contentDir: content/en
+  title: "CHOISEOWON'S PORTFOLIO"
+  weight: 2
+  params:
+    description: "Seowon Choi's personal portfolio and AI projects."
+    author: admin
+  menu:
+    main:
+      - name: "Home"
+        url: "/"
+        weight: 10
+      - name: "Resumé"
+        url: "about/"
+        weight: 20
+      - name: "Contact"
+        url: "contact/"
+        weight: 30
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
@@ -34,4 +53,15 @@ ko:
   params:
     description: "전북대학교 컴퓨터공학부 최서원의 블로그입니다."
     author: admin
+      menu:
+    main:
+      - name: "홈"
+        url: "/"
+        weight: 10
+      - name: "이력서"
+        url: "about/"
+        weight: 20
+      - name: "문의"
+        url: "contact/"
+        weight: 30
 
