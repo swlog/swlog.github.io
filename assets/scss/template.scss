@@ -116,3 +116,39 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
+/* ============================= */
+/* 버튼 hover(마우스 올렸을 때) 효과 */
+/* ============================= */
+
+/* 기본 버튼 */
+button,
+.btn {
+  background-color: #3182ce; /* 기본 파란색 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* hover 시 색상 및 시각 효과 */
+button:hover,
+.btn:hover {
+  background-color: #2b6cb0; /* hover 시 진한 파란색으로 변경 */
+  transform: scale(1.03);   /* 살짝 커지게 (시각적 피드백) */
+}
+
+/* 클릭(활성화) 시 효과 */
+button:active,
+.btn:active {
+  background-color: #2c5282; /* 더 진한 색상 */
+  transform: scale(0.98);    /* 눌리는 듯한 느낌 */
+}
+
+/* 다크 모드일 때 버튼 hover 색상 조정 */
+.dark button:hover,
+.dark .btn:hover {
+  background-color: #63b3ed; /* 밝은 하늘색 느낌 */
+  color: #000;
+}
