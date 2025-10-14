@@ -153,6 +153,7 @@ button:active,
   color: #000;
 }
 
+
 /* 상단 네비게이션 링크에 적용 */
 .navbar a,
 .navbar .nav-link,
@@ -163,6 +164,16 @@ button:active,
   color: #333;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+/* hover 시 글자색 변경 */
+.navbar a:hover,
+.navbar .nav-link:hover,
+.navbar-main a:hover,
+.navbar-main .nav-link:hover,
+.site-nav a:hover,
+.site-nav .nav-link:hover {
+  color: #ffb400; /* 노란색 글자 */
 }
 
 /* 다크 모드 대응 */
