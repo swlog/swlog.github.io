@@ -1,5 +1,5 @@
 ---
-title: Cartoon Face Generator
+title: 영화 리뷰 
 summary: Write about your project here...
 tags:
   - CV
