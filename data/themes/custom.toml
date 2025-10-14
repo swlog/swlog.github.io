@@ -1,27 +1,27 @@
 # Essentially Minimal theme but with constant home section bg color.
 # NeoTech Pink Theme
-name = "NeoTech Pink"
+# WarmTech Amber Theme
+name = "WarmTech Amber"
 
 [light]
-  # Primary (핵심 포인트 색)
-  primary = "#d946ef"          # 보랏빛 핑크 (품격 + 독창성)
+  # Primary
+  primary = "#f59e0b"        
   
-  # Menu (헤더)
-  menu_primary = "#f8fafc"     # 밝은 회색 (차분한 베이스)
-  menu_text = "#1e293b"        # 진한 남색 (이공계 안정감)
-  menu_text_active = "#d946ef" # 선택 시 포인트
-  menu_title = "#0f172a"
+  # Menu 
+  menu_primary = "#fffaf5"     
+  menu_text = "#4b5563"        
+  menu_text_active = "#f59e0b" 
+  menu_title = "#1e293b"       
 
-  # Home sections (본문 배경)
+  # Home sections 
   home_section_odd = "#ffffff"
-  home_section_even = "#f1f5f9"  # 섹션이 은은하게 구분되게
+  home_section_even = "#fdf6ec"
 
 [dark]
-  primary = "#e879f9"          # 다크모드용 연보라 핑크
-  link = "#f0abfc"
-  link_hover = "#f5d0fe"
-  background = "#0f172a"       # 네이비 블랙
-  home_section_odd = "#0f172a"
-  home_section_even = "#1e293b"
-  menu_primary = "#1e293b"
-
+  primary = "#fbbf24"          
+  link = "#fcd34d"
+  link_hover = "#fde68a"
+  background = "#1e1b16"        
+  home_section_odd = "#1e1b16"
+  home_section_even = "#292524"
+  menu_primary = "#292524"
