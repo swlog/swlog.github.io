@@ -1,5 +1,5 @@
 ---
-title: Cartoon Face Generator
+title: Cartoon Face 
 summary: "GAN(Generative Adversarial Network)을 이용해 실제 사진을 만화 스타일 얼굴로 변환하는 프로젝트입니다."
 tags:
 - Computer Vision
