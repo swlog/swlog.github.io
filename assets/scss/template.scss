@@ -171,3 +171,15 @@ button:active,
   color: #ff8800 !important;
   font-weight: bold; /* 강조하고 싶으면 추가 */
 }
+
+/* 다크 모드에서 메뉴 hover/active 색상 강제 주황 고정 */
+html[data-theme="dark"] .navbar .nav-link:hover,
+html[data-theme="dark"] .navbar .nav-link:active,
+html[data-theme="dark"] .navbar .nav-link.active {
+  color: #f59e0b !important; /* 주황색 */
+}
+
+/* 링크 hover도 동일하게 주황으로 고정 */
+html[data-theme="dark"] a:hover {
+  color: #f59e0b !important;
+}
