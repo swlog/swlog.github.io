@@ -116,34 +116,3 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-/* 기본 메뉴 링크 스타일 */
-.navbar a,
-.navbar .nav-link {
-  color: #333; /* 기본 글자색 */
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-/* 마우스를 올렸을 때 */
-.navbar a:hover,
-.navbar .nav-link:hover {
-  color: #fff;
-  background-color: #ffb400; /* 노란빛 오렌지색 배경 */
-}
-
-/* 클릭했을 때 또는 현재 페이지일 때 */
-.navbar a:active,
-.navbar .nav-link:active,
-.navbar .nav-link.active {
-  color: #fff;
-  background-color: #cc8400; /* hover보다 조금 진한 색 */
-}
-
-/* 다크 모드 대응 (있을 경우) */
-.dark .navbar a:hover,
-.dark .navbar .nav-link:hover {
-  background-color: #ffcc33;
-  color: #000;
-}
