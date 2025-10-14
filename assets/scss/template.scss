@@ -136,3 +136,19 @@ button:hover,
 .dark .btn:hover {
   background-color: #1E90FF;
 }
+.navbar-nav .nav-link {
+  color: #2D3748;  /* 기본 텍스트 색상 */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #4A90E2;  /* hover 시 색상 (파란색 계열) */
+}
+
+/* 다크모드일 때 hover 색상 */
+.dark .navbar-nav .nav-link:hover {
+  color: #90CDF4;  /* 밝은 파란색 */
+}
+
+
+
