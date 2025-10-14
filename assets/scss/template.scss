@@ -160,26 +160,4 @@ button:active,
   transition: color 0.3s ease;
 }
 
-/* 클릭 순간 (active pseudo-state) */
-.navbar .nav-link:active {
-  color: #ff8800 !important;
-}
 
-/* 현재 페이지 메뉴 (Hugo가 자동으로 active 클래스 부여) */
-.navbar .nav-link.active,
-.navbar .nav-item.active > .nav-link {
-  color: #ff8800 !important;
-  font-weight: bold; /* 강조하고 싶으면 추가 */
-}
-
-/* 다크 모드에서 메뉴 hover/active 색상 강제 주황 고정 */
-html[data-theme="dark"] .navbar .nav-link:hover,
-html[data-theme="dark"] .navbar .nav-link:active,
-html[data-theme="dark"] .navbar .nav-link.active {
-  color: #f59e0b !important; /* 주황색 */
-}
-
-/* 링크 hover도 동일하게 주황으로 고정 */
-html[data-theme="dark"] a:hover {
-  color: #f59e0b !important;
-}
