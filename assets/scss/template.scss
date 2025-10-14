@@ -116,39 +116,3 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
-button,
-.btn {
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover,
-.btn:hover {
-  background-color: #357ABD;
-}
-
-.dark button:hover,
-.dark .btn:hover {
-  background-color: #1E90FF;
-}
-.navbar-nav .nav-link {
-  color: #2D3748;  /* 기본 텍스트 색상 */
-  transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #4A90E2;  /* hover 시 색상 (파란색 계열) */
-}
-
-/* 다크모드일 때 hover 색상 */
-.dark .navbar-nav .nav-link:hover {
-  color: #90CDF4;  /* 밝은 파란색 */
-}
-
-
-
