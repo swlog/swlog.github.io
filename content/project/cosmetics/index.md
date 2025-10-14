@@ -1,5 +1,5 @@
 ---
-title: Cosmetics Semantic Search
+title: 아니 왜 안바뀜.
 summary: Write about your project here...
 tags:
   - NLP
