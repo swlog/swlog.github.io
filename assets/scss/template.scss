@@ -115,4 +115,18 @@ ul.network-icon .big-icon {
 .wg-about .portrait-title h3 {
   font-size: 0.8rem;
 }
+/* 버튼 호버 효과 */
 
+// .btn 클래스를 가진 모든 버튼에 적용됩니다.
+.btn {
+  // 색상이 0.3초 동안 부드럽게 변하도록 설정 (애니메이션 효과)
+  transition: all 0.3s ease-in-out;
+}
+
+// .btn 클래스를 가진 버튼에 마우스를 올렸을 때 (hover)
+.btn:hover {
+  // 배경색을 원하는 색상으로 변경 (예: 진한 회색)
+  background-color: #555; 
+  // 글자색을 원하는 색상으로 변경 (예: 흰색)
+  color: #fff;
+}
