@@ -160,8 +160,14 @@ button:active,
   transition: color 0.3s ease;
 }
 
-/* 클릭했을 때나 현재 페이지(active)인 경우에도 주황색 유지 */
-.navbar .nav-link:active,
-.navbar .nav-link.active {
+/* 클릭 순간 (active pseudo-state) */
+.navbar .nav-link:active {
   color: #ff8800 !important;
+}
+
+/* 현재 페이지 메뉴 (Hugo가 자동으로 active 클래스 부여) */
+.navbar .nav-link.active,
+.navbar .nav-item.active > .nav-link {
+  color: #ff8800 !important;
+  font-weight: bold; /* 강조하고 싶으면 추가 */
 }
