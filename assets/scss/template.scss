@@ -153,3 +153,25 @@ button:active,
   color: #000;
 }
 
+/* 상단 네비게이션 링크에 적용 */
+.navbar a,
+.navbar .nav-link,
+.navbar-main a,
+.navbar-main .nav-link,
+.site-nav a,
+.site-nav .nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* 다크 모드 대응 */
+.dark .navbar a:hover,
+.dark .navbar .nav-link:hover,
+.dark .navbar-main a:hover,
+.dark .navbar-main .nav-link:hover,
+.dark .site-nav a:hover,
+.dark .site-nav .nav-link:hover {
+  color: #ffb400;
+}
+
