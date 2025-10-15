@@ -20,7 +20,7 @@ marketing:
     org_name: '전북대학교'
     description: '전북대학교 컴퓨터인공지능학부 최서원의 포트폴리오 입니다.'
     twitter: ''
-    image: 'upload/swlog logo.jpg' 
+    image: 'uploads/swlog logo.jpg' 
   analytics:
     google_analytics: ''
     baidu_tongji: ''
