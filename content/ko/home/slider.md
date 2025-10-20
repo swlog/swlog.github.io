@@ -1,6 +1,7 @@
 ---
 widget: hero
 headless: true
+active: true  
 weight: 15  # intro보다 아래, portfolio보다 위로 위치 조정 가능
 title: ""
 
