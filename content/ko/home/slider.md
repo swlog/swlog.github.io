@@ -5,4 +5,4 @@ active: true
 weight: 1
 title: ""
 ---
-{{ partial "slider.html" . }}
+{{< partial "slider.html" >}}
