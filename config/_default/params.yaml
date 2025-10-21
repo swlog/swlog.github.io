@@ -107,4 +107,8 @@ extensions:
   academicons:
     enable: false
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
