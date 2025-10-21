@@ -1,5 +1,5 @@
 ---
-widget: markdown
+widget: html
 headless: true
 active: true
 weight: 1
