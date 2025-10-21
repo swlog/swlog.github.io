@@ -1,5 +1,5 @@
 ---
-widget: html
+widget: blank
 headless: true
 active: true
 weight: 1
