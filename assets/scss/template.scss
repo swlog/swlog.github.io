@@ -160,4 +160,27 @@ button:active,
   transition: color 0.3s ease;
 }
 
+/* --- Portfolio 카드 동일 크기 설정 --- */
+.portfolio-grid .project-card {
+  aspect-ratio: 4 / 3; /* 가로세로 비율 고정 (예: 4:3) */
+  height: 280px;       /* 카드 전체 높이 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-grid .project-card img {
+  object-fit: cover;
+  height: 180px; /* 이미지 영역 고정 */
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card .card-body {
+  flex-grow: 1;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+
 
