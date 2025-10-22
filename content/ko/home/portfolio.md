@@ -8,7 +8,7 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 30
+weight: 20
 
 title: ''
 subtitle: ''
@@ -34,10 +34,9 @@ content:
       tag: CV
     - name: NLP
       tag: NLP
-
 design:
   columns: '1'
-  view: masonry
+  view: grid
   flip_alt_rows: true
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
