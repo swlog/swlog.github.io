@@ -28,12 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Artificial Intelligence
-      tag: AI
-    - name: Python Projects
+    - name: Machine Learning
+      tag: ML
+    - name: Computer Vision
       tag: CV
-    - name: Artificial Intelligence
-      tag: AI
+    - name: NLP
+      tag: NLP
 
 design:
   columns: '1'
