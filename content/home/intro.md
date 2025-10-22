@@ -18,7 +18,7 @@ author: admin
 #  css_class: fullscreen
 ---
 
-👋 안녕하세요! 저는 **최서원**, 전북대학교 컴퓨터인공지능학부에서 공부하며 소프트웨어와 AI를 사랑하는 개발자입니다 ✨ 
+👋 안녕하세요! 저는 **최서원**입니다. 전북대학교 컴퓨터공학부에서 공부하며 소프트웨어와 AI를 사랑하는 개발자입니다. ✨ 
 {style="font-size: 1.2rem; background: #FFB76B; background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"}
 
 Check out my [resumé](/about/) and portfolio below 😍
