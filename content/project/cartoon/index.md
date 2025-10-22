@@ -16,7 +16,7 @@ image:
   alt_text: A generated cartoon face
   
   # 이미지 아래에 작게 표시될 설명 (선택사항)
-  caption: "AI로 생성된 만화 캐릭터 얼굴"
+  caption: "오목 만들기"
 # --------------------
 
 # 외부 링크가 없다면 이 부분은 비워두거나 지워도 됩니다.

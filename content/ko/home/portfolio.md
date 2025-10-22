@@ -36,9 +36,8 @@ content:
       tag: NLP
 
 design:
-  columns: '1'
-  view: masonry
-  flip_alt_rows: true
+  columns: '3'
+  view: grid          # ← 꼭 바꿔야 합니다!
+  flip_alt_rows: false
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
----

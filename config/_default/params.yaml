@@ -114,3 +114,4 @@ markup:
     renderer:
       unsafe: true
 
+ogImage: "assets/media/swlog_logo.jpg"
