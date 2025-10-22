@@ -41,7 +41,7 @@ header:
     show_search: true
     highlight_active_link: false
     logo:
-      image: "assets/media/swlog_logo.png"     # 로고 파일 경로
+      image: "media/swlog_logo.jpg"     # 로고 파일 경로
       alt_text: '최서원의 로고'
 
 footer:
