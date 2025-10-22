@@ -160,27 +160,40 @@ button:active,
   transition: color 0.3s ease;
 }
 
-/* --- Portfolio 카드 동일 크기 설정 --- */
-.portfolio-grid .project-card {
-  aspect-ratio: 4 / 3; /* 가로세로 비율 고정 (예: 4:3) */
-  height: 280px;       /* 카드 전체 높이 */
+/* --- 포트폴리오 카드 동일 크기 및 비율 통일 --- */
+.project-card {
+  height: 320px !important;   /* 카드 전체 높이 */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
-.portfolio-grid .project-card img {
-  object-fit: cover;
-  height: 180px; /* 이미지 영역 고정 */
+/* 이미지 부분 고정 비율 유지 */
+.project-card img {
   width: 100%;
-  border-radius: 8px;
+  height: 200px;               /* 이미지 높이 고정 */
+  object-fit: cover;           /* 비율 맞추면서 자르기 */
+  border-radius: 8px 8px 0 0;
 }
 
+/* 카드 내용 */
 .project-card .card-body {
+  padding: 10px 14px;
   flex-grow: 1;
-  padding: 10px 12px;
   text-align: center;
 }
 
+/* 제목 정렬 */
+.project-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
 
+/* 요약 텍스트 */
+.project-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
 
