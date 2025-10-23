@@ -35,6 +35,9 @@ content:
     - name: NLP
       tag: NLP
 design:
-  columns: '3'
-  view: card
+  columns: '1'
+  view: grid
+  flip_alt_rows: true
+  background: {}
+  spacing: {padding: [0, 0, 0, 0]}
 ---
