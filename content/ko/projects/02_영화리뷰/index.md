@@ -1,6 +1,6 @@
 ---
 title: "영화리뷰"
-weight: 2
+date: 2025-03-06
 summary: "React와 TMDB API를 활용한 영화 스트리밍 사이트 클론입니다."
 tags:
   - React
