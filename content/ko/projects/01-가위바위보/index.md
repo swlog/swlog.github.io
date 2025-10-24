@@ -6,11 +6,16 @@ date: 2024-03-10
 weight: 1
 featured: true         # ✅ 대표 이미지 표시용 (구버전 테마 대응)
 image:
-  filename: "rps.jpg"
+  filename: "upload/rps.jpg"
   caption: "터미널 기반 가위바위보 게임"
   focal_point: "Center"
 ---
 
+<p align="center">
+  <img src="/uploads/rps.jpg" alt="가위바위보 게임 실행 화면" width="80%">
+</p>
+
+---
 
 ## 🧩 프로젝트 개요
 Python을 사용해 콘솔 환경에서 동작하는 **가위바위보 게임**을 제작했습니다.  
