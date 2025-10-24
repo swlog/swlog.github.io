@@ -23,24 +23,24 @@ main:
     weight: 10
 
   - name: "소개"
-    url: "about/"
+    url: "/ko/about/"
     weight: 20
 
   - name: "프로젝트"
-    url: "projects/"
+    url: "/ko/projects/"
     weight: 30
 
   - name: "활동"
-    url: "activities/"
+    url: "/ko/activities/"
     weight: 40
     children:
       - name: "교내활동"
-        url: "#oncampus"
+        url: "/oncampus"
         weight: 1
       - name: "교외활동"
-        url: "#offcampus"
+        url: "/offcampus"
         weight: 2
 
   - name: "연락처"
-    url: "contact/"
+    url: "ko/contact/"
     weight: 50
