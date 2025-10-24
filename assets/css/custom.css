@@ -1,0 +1,35 @@
+.overlay-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* 🔹 어두운 반투명 레이어 */
+  border-radius: 12px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
