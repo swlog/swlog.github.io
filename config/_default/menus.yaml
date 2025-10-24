@@ -30,20 +30,21 @@ main:
     url: "/ko/projects/"
     weight: 30
 
+  # 상위 메뉴 (활동)
   - name: "활동"
     url: "/ko/activities/"
-    identifier: "activities"   # ✅ 상위 탭 고유 ID
     weight: 40
 
-  - name: "교내활동"
+  # 하위 메뉴들 (드롭다운)
+  - parent: "활동"
+    name: "교내활동"
     url: "/ko/activities/oncampus/"
-    parent: "activities"       # ✅ 부모 탭 지정
-    weight: 1
+    weight: 41
 
-  - name: "교외활동"
+  - parent: "활동"
+    name: "교외활동"
     url: "/ko/activities/offcampus/"
-    parent: "activities"       # ✅ 부모 탭 지정
-    weight: 2
+    weight: 42
 
   - name: "연락처"
     url: "/ko/contact/"
