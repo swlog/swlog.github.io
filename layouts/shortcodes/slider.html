@@ -15,29 +15,32 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  text-align: center; /* 텍스트 중앙*/
+  text-align: center; /* 텍스트 중앙 */
   position: relative;
 }
 
+/* 중앙 텍스트 완전 가운데 정렬 */
 #homeCarousel .carousel-caption {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -42%);
+  transform: translate(-50%, -50%);
   width: 90%;
   max-width: 900px;
+  text-align: center;
   text-shadow: 0 2px 12px rgba(0,0,0,.6);
   opacity: 0;
   transition: opacity .5s ease, transform .6s ease;
 }
+
 #homeCarousel .carousel-item.active .carousel-caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
+/* 텍스트 애니메이션 */
 #homeCarousel .carousel-item .carousel-caption h1,
-#homeCarousel .carousel-item .carousel-caption p,
-#homeCarousel .carousel-item .carousel-caption a {
+#homeCarousel .carousel-item .carousel-caption p {
   opacity: 0;
   transform: translateY(14px);
 }
@@ -51,13 +54,8 @@
   transform: none;
   transition: all .6s ease .18s;
 }
-#homeCarousel .carousel-item.active .carousel-caption a {
-  opacity: 1;
-  transform: none;
-  transition: all .6s ease .3s;
-}
 
-/*하단바*/
+/* ✅ 하단 인디케이터 (알약 스타일) */
 #homeCarousel .carousel-indicators {
   bottom: 2rem;
   gap: 10px; /* 버튼 간 간격 */
@@ -89,8 +87,8 @@
 }
 
 @media (max-width: 992px) {
-  #homeCarousel .carousel-item {min-height: 60vh;}
-  #homeCarousel .carousel-caption h1 {font-size: 2rem;}
+  #homeCarousel .carousel-item { min-height: 60vh; }
+  #homeCarousel .carousel-caption h1 { font-size: 2rem; }
 }
 </style>
 
@@ -111,7 +109,6 @@
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">최서원의 포트폴리오</h1>
           <p class="lead">프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
-          <a class="btn btn-primary btn-lg" href="/about/">소개 보기</a>
         </div>
       </div>
 
@@ -121,7 +118,6 @@
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">활동</h1>
           <p class="lead">즐거움과 배움이 있는 활동</p>
-          <a class="btn btn-outline-light btn-lg" href="/post/">기록 보기</a>
         </div>
       </div>
 
@@ -130,8 +126,7 @@
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide3.jpeg');">
         <div class="carousel-caption">
           <h1 class="display-3 fw-semibold">연락하기</h1>
-          <p class="lead">언제나 연락은</p>
-          <a class="btn btn-primary btn-lg" href="/contact/">Contact</a>
+          <p class="lead">언제나 연락은 환영입니다.</p>
         </div>
       </div>
     </div>
@@ -149,4 +144,4 @@
 <!-- Bootstrap JS (필수) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>
