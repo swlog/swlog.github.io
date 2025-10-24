@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: collection
     content:
-      title: "프로젝트 모음"
+      title: "프로젝트"
       text: "진행한 주요 프로젝트"
       filters:
         folders:
