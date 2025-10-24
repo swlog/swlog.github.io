@@ -75,5 +75,15 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+sitemap:
+  changefreq: weekly
+  filename: sitemap.xml
+  priority: 0.5
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - Sitemap
 
