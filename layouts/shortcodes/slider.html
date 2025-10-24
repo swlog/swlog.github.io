@@ -33,6 +33,19 @@
   transition: opacity .5s ease, transform .6s ease;
 }
 
+#homeCarousel .carousel-caption h1 {
+  font-size: 2.2rem;        /* 글씨 크기 */
+  font-weight: 700;         /* 두께 (진하게) */
+  color: #ffffff;           /* 글씨 색상 (흰색) */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* 배경 위에서도 선명하게 */
+}
+
+#homeCarousel .carousel-caption p {
+  font-size: 1rem;          /* 본문 크기 */
+  font-weight: 400;         /* 두께 (보통) */
+  color: rgba(255,255,255,0.85); /* 약간 부드러운 흰색 */
+}
+
 #homeCarousel .carousel-item.active .carousel-caption {
   opacity: 1;
   transform: translate(-50%, -50%);
@@ -150,3 +163,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        
