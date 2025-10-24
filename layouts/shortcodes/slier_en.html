@@ -1,0 +1,179 @@
+<style>
+.fullbleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+#homeCarousel .carousel-item {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* 중앙 텍스트 */
+#homeCarousel .carousel-caption {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0,0,0,.6);
+  opacity: 0;
+  transition: opacity .5s ease, transform .6s ease;
+}
+
+#homeCarousel .carousel-caption h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+#homeCarousel .carousel-caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+}
+
+#homeCarousel .carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* 텍스트 애니메이션 */
+#homeCarousel .carousel-item .carousel-caption h1,
+#homeCarousel .carousel-item .carousel-caption p {
+  opacity: 0;
+  transform: translateY(14px);
+}
+#homeCarousel .carousel-item.active .carousel-caption h1 {
+  opacity: 1;
+  transform: none;
+  transition: all .6s ease .05s;
+}
+#homeCarousel .carousel-item.active .carousel-caption p {
+  opacity: 1;
+  transform: none;
+  transition: all .6s ease .18s;
+}
+
+/* ✅ 하단 인디케이터 — 작고 얇은 바형 */
+#homeCarousel.carousel .carousel-indicators {
+  bottom: 1.2rem;
+  gap: 6px;
+}
+
+#homeCarousel.carousel .carousel-indicators button[data-bs-target] {
+  width: 14px;
+  height: 1.5px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.25);
+  opacity: 1;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#homeCarousel.carousel .carousel-indicators button[data-bs-target].active {
+  width: 24px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 6px rgba(255,255,255,0.5);
+  transform: translateY(-0.5px);
+}
+
+#homeCarousel.carousel .carousel-indicators button[data-bs-target]:hover {
+  background: rgba(255,255,255,0.6);
+  transform: translateY(-0.3px);
+}
+
+/* 반응형 */
+@media (max-width: 992px) {
+  #homeCarousel .carousel-item { min-height: 60vh; }
+  #homeCarousel .carousel-caption h1 { font-size: 1.8rem; }
+  #homeCarousel .carousel-caption p { font-size: 0.9rem; }
+  #homeCarousel.carousel .carousel-indicators button[data-bs-target] {
+    width: 10px;
+    height: 1px;
+  }
+}
+</style>
+
+<div class="fullbleed">
+  <div id="homeCarousel" class="carousel slide carousel-fade"
+       data-bs-ride="carousel"
+       data-bs-interval="5000"> <!-- ✅ 5초마다 자동 전환 -->
+       
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- 슬라이드 1 -->
+      <div class="carousel-item active"
+           style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide1.jpg');">
+        <div class="carousel-caption">
+          <h1>최서원의 포트폴리오</h1>
+          <p>프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
+        </div>
+      </div>
+
+      <!-- 슬라이드 2 -->
+      <div class="carousel-item"
+           style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide2.jpg');">
+        <div class="carousel-caption">
+          <h1>활동</h1>
+          <p>즐거움과 배움이 있는 활동</p>
+        </div>
+      </div>
+
+      <!-- 슬라이드 3 -->
+      <div class="carousel-item"
+           style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide3.jpg');">
+        <div class="carousel-caption">
+          <h1>연락하기</h1>
+          <p>언제나 연락은 환영입니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 좌우 화살표 -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+<!-- ✅ 자동 슬라이드 JS 설정 (5초마다 전환) -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const myCarousel = document.querySelector('#homeCarousel');
+  if (myCarousel) {
+    new bootstrap.Carousel(myCarousel, {
+      interval: 5000,   // 5초마다 자동 전환
+      ride: 'carousel', // 페이지 로드 시 자동 시작
+      pause: false,     // 마우스 올려도 정지하지 않음
+      wrap: true        // 마지막 → 첫 슬라이드 순환
+    });
+  }
+});
+</script>
