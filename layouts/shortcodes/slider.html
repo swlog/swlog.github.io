@@ -10,110 +10,140 @@
   overflow: hidden;
 }
 
+/* 전체 슬라이드 */
 #homeCarousel .carousel-item {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   color: #fff;
-  text-align: center;
   position: relative;
-  transition: transform 0.8s ease-in-out;
 }
 
+/* 어두운 오버레이 */
+#homeCarousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* 텍스트 영역 */
 #homeCarousel .carousel-caption {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -42%);
-  width: 90%;
-  max-width: 900px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
-  opacity: 0;
-  transition: opacity 1s ease, transform 1s ease;
-}
-#homeCarousel .carousel-item.active .carousel-caption {
-  opacity: 1;
-  transform: translate(-50%, -50%);
+  right: 8%;
+  text-align: right;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 550px;
 }
 
-/* --- 텍스트 애니메이션 --- */
-#homeCarousel .carousel-item .carousel-caption h1,
-#homeCarousel .carousel-item .carousel-caption p,
-#homeCarousel .carousel-item .carousel-caption a {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: all 0.8s ease;
-}
-#homeCarousel .carousel-item.active .carousel-caption h1 {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.2s;
-}
-#homeCarousel .carousel-item.active .carousel-caption p {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.4s;
-}
-#homeCarousel .carousel-item.active .carousel-caption a {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.6s;
+#homeCarousel .carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
 
-/* --- 인디케이터 (dot 스타일) --- */
-#homeCarousel .carousel-indicators {
-  bottom: 25px;
-}
-#homeCarousel .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.4);
-  margin: 0 6px;
-  transition: all 0.3s ease;
-  border: none;
-}
-#homeCarousel .carousel-indicators .active {
-  background: #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.8);
-  transform: scale(1.3);
+#homeCarousel .carousel-caption p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #f2f2f2;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-/* --- 화살표 버튼 (글래스 효과 + 아이콘 변경) --- */
+/* 좌우 화살표 */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-size: 60% 60%;
-  background-color: rgba(255,255,255,0.15);
-  backdrop-filter: blur(6px);
+  background-color: rgba(255,255,255,0.4);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
+  background-size: 50% 50%;
   transition: all 0.3s ease;
 }
+
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: rgba(255,255,255,0.35);
-  transform: scale(1.15);
+  background-color: rgba(255,255,255,0.7);
+  transform: scale(1.1);
 }
 
-/* --- 버튼(CTA) --- */
-#homeCarousel .btn {
-  border-radius: 50px;
-  padding: 0.75rem 2rem;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+/* 인디케이터 (밑의 바) */
+#homeCarousel .carousel-indicators {
+  bottom: 20px;
 }
-#homeCarousel .btn-primary {
-  background: linear-gradient(135deg, #007aff, #00d4ff);
+#homeCarousel .carousel-indicators [data-bs-target] {
+  width: 32px;
+  height: 4px;
+  border-radius: 999px;
+  background-color: rgba(255,255,255,0.4);
   border: none;
+  transition: all 0.3s ease;
 }
-#homeCarousel .btn-outline-light:hover {
-  background: rgba(255,255,255,0.2);
+#homeCarousel .carousel-indicators .active {
+  background-color: #fff;
+  width: 56px;
 }
 
-/* --- 반응형 --- */
+/* 반응형 */
 @media (max-width: 992px) {
-  #homeCarousel .carousel-item {min-height: 65vh;}
-  #homeCarousel .carousel-caption h1 {font-size: 1.8rem;}
+  #homeCarousel .carousel-item {min-height: 70vh;}
+  #homeCarousel .carousel-caption {
+    right: 5%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #homeCarousel .carousel-caption h1 {font-size: 2rem;}
 }
 </style>
+
+<div class="fullbleed">
+  <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- 슬라이드 1 -->
+      <div class="carousel-item active" style="background-image:url('/uploads/slide1.jpeg');">
+        <div class="carousel-caption">
+          <h1>PROGRAMMER</h1>
+          <p>논리적인 코드로 아이디어를 현실로 구현합니다.</p>
+        </div>
+      </div>
+
+      <!-- 슬라이드 2 -->
+      <div class="carousel-item" style="background-image:url('/uploads/slide2.jpeg');">
+        <div class="carousel-caption">
+          <h1>CREATOR</h1>
+          <p>사용자 경험을 고려한 디자인과 개발을 추구합니다.</p>
+        </div>
+      </div>
+
+      <!-- 슬라이드 3 -->
+      <div class="carousel-item" style="background-image:url('/uploads/slide3.jpeg');">
+        <div class="carousel-caption">
+          <h1>INNOVATOR</h1>
+          <p>새로운 기술로 세상을 더 나은 방향으로 이끌고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
