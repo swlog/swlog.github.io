@@ -58,10 +58,29 @@ ko:
       - name: "홈"
         url: "/"
         weight: 10
-      - name: "이력서"
+
+      - name: "소개"
         url: "about/"
         weight: 20
-      - name: "문의"
-        url: "contact/"
+
+      - name: "프로젝트"
+        url: "projects/"
         weight: 30
 
+      - name: "활동"
+        url: "activities/"
+        weight: 40
+        children:
+          - name: "교내활동"
+            url: "#oncampus"
+            weight: 1
+          - name: "교외활동"
+            url: "#offcampus"
+            weight: 2
+
+      - name: "연락처"
+        url: "contact/"
+        weight: 50
+
+     
+    
