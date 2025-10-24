@@ -20,26 +20,19 @@
 main:
   - name: "홈"
     url: "/"
-    weight: 1
+    weight: 10
 
-  - name: "프로필"
-    identifier: "profile"
-    weight: 2
-    children:
-      - name: "소개"
-        url: "#about"
-        weight: 1
-      - name: "학력"
-        url: "#education"
-        weight: 2
+  - name: "소개"
+    url: "about/"
+    weight: 20
 
   - name: "프로젝트"
-    identifier: "projects"
-    weight: 3
+    url: "projects/"
+    weight: 30
 
   - name: "활동"
-    identifier: "activities"
-    weight: 4
+    url: "activities/"
+    weight: 40
     children:
       - name: "교내활동"
         url: "#oncampus"
@@ -49,5 +42,5 @@ main:
         weight: 2
 
   - name: "연락처"
-    url: "#contact"
-    weight: 5
+    url: "contact/"
+    weight: 50
