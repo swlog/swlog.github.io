@@ -17,8 +17,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: '전북대학교'
-    description: '전북대학교 컴퓨터공학부 최서원의 포트폴리오 입니다.'
+    org_name: '최서원 포트폴리오 | 전북대학교 컴퓨터공학부'
+    description: '전북대학교 컴퓨터공학부 최서원의 포트폴리오 입니다. 프로젝트, 연구, 코딩 작품과 활동 기록을 한눈에 볼 수 있습니다.'
     twitter: ''
     image: 'uploads/swlog logo.jpg' 
   analytics:
@@ -44,6 +44,7 @@ header:
     logo:
       image: 'assets/media/swlog_logo.jpg'     # 로고 파일 경로
       alt_text: '최서원의 로고'
+    show_dropdown: true  
 
 footer:
   copyright:
