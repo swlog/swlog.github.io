@@ -42,5 +42,5 @@ main:
         weight: 2
 
   - name: "연락처"
-    url: "ko/contact/"
+    url: "/ko/contact/"
     weight: 50
