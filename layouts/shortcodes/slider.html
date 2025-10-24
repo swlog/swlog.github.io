@@ -1,4 +1,5 @@
 <style>
+/* 전체 영역 */
 .fullbleed {
   width: 100vw;
   position: relative;
@@ -20,7 +21,7 @@
   position: relative;
 }
 
-/* 어두운 오버레이 */
+/* 부드러운 어두운 오버레이 */
 #homeCarousel .carousel-item::before {
   content: "";
   position: absolute;
@@ -37,63 +38,80 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 90%;
-  max-width: 900px;
+  max-width: 800px;
   text-align: center;
 }
 
 #homeCarousel .carousel-caption h1 {
   font-family: "Noto Sans KR", "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 2.8rem;
-  letter-spacing: 1px;
+  font-size: 2.6rem;
   margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
 }
 
 #homeCarousel .carousel-caption p {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: rgba(255,255,255,0.9);
 }
 
-/* 인디케이터 (얇은 바 스타일) */
+/* 인디케이터 — 얇고 미니멀한 바 */
 #homeCarousel .carousel-indicators {
-  bottom: 22px;
+  bottom: 20px;
 }
 #homeCarousel .carousel-indicators [data-bs-target] {
-  width: 28px;
+  width: 24px;
   height: 2px;
-  border-radius: 1px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.35);
   border: none;
+  border-radius: 1px;
   margin: 0 3px;
   transition: all 0.3s ease;
 }
 #homeCarousel .carousel-indicators .active {
+  width: 40px;
   background-color: #fff;
-  width: 48px;
 }
 
-/* 좌우 화살표 */
+/* 좌우 화살표 — 얇고 심플한 라인 스타일 */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(255,255,255,0.25);
-  border-radius: 4px;
-  width: 40px;
-  height: 40px;
-  background-size: 50% 50%;
-  transition: all 0.2s ease;
+  background: none;
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid rgba(255,255,255,0.8);
+  border-right: 2px solid rgba(255,255,255,0.8);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel-control-next-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: rgba(255,255,255,0.5);
+  border-color: #fff;
+  background-color: rgba(255,255,255,0.15);
+  transform: scale(1.1);
 }
 
 /* 반응형 */
 @media (max-width: 992px) {
   #homeCarousel .carousel-item {min-height: 70vh;}
   #homeCarousel .carousel-caption h1 {font-size: 2rem;}
-  #homeCarousel .carousel-caption p {font-size: 1rem;}
+  #homeCarousel .carousel-caption p {font-size: 0.95rem;}
 }
 </style>
 
@@ -110,8 +128,8 @@
       <!-- 슬라이드 1 -->
       <div class="carousel-item active" style="background-image:url('/uploads/slide1.jpeg');">
         <div class="carousel-caption">
-          <h1>취미</h1>
-          <p>여러 가지 취미를 가지며 지치지 않는 일상을 유지합니다.</p>
+          <h1>업업</h1>
+          <p>소통과 협력을 통해 더 나은 결과를 만듭니다.</p>
         </div>
       </div>
 
@@ -119,15 +137,15 @@
       <div class="carousel-item" style="background-image:url('/uploads/slide2.jpeg');">
         <div class="carousel-caption">
           <h1>도전</h1>
-          <p>새로운 분야에 대한 도전은 저의 성장을 이끌어냅니다.</p>
+          <p>새로운 시도를 통해 가능성을 확장합니다.</p>
         </div>
       </div>
 
       <!-- 슬라이드 3 -->
       <div class="carousel-item" style="background-image:url('/uploads/slide3.jpeg');">
         <div class="carousel-caption">
-          <h1>협업</h1>
-          <p>소통과 협력을 통해 더 나은 결과를 만듭니다.</p>
+          <h1>열정</h1>
+          <p>작은 변화가 더 큰 성장을 만듭니다.</p>
         </div>
       </div>
     </div>
