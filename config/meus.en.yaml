@@ -1,0 +1,40 @@
+en:
+  languageCode: en-us
+  contentDir: content/en
+  title: "CHOISEOWON'S PORTFOLIO"
+  weight: 2
+  params:
+    description: "Seowon Choi's personal portfolio and AI projects."
+    author: admin
+    en:
+  languageCode: en-us
+  contentDir: content/en
+  title: "CHOISEOWON'S PORTFOLIO"
+  weight: 2
+  params:
+    description: "Seowon Choi's personal portfolio and AI projects."
+    author: admin
+  menu:
+    main:
+      - name: "Home"
+        url: "/"
+        weight: 10
+      - name: "Profile"
+        url: "/en/about/"
+        weight: 20
+      - name: "Project"
+        url: "/en/projects/"
+        weight: 30
+      - name: "Activity"
+        url: "/en/activites/"
+        children:
+          - name: "on-campus"
+            url: "/en/activities/oncampus/"
+            weight: 1
+          - name: "off-campus"
+            url: "/en/activities/offcampus/"
+            weight: 2
+        weight: 40    
+      - name: "Contact"
+        url: "/en/contact/"
+        weight: 50

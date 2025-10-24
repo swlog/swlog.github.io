@@ -6,94 +6,13 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: "CHOISEOWON'S PORTFOLIO"
-  weight: 2
+  title: CHOISEOWON'S PORTFOLIO
   params:
-    description: "Seowon Choi's personal portfolio and AI projects."
-    author: admin
-    en:
-  languageCode: en-us
-  contentDir: content/en
-  title: "CHOISEOWON'S PORTFOLIO"
-  weight: 2
-  params:
-    description: "Seowon Choi's personal portfolio and AI projects."
-    author: admin
-  menu:
-    main:
-      - name: "Home"
-        url: "/"
-        weight: 10
-      - name: "Profile"
-        url: "/en/about/"
-        weight: 20
-      - name: "Project"
-        url: "/en/projects/"
-        weight: 30
-      - name: "Activity"
-        url: "/en/activites/"
-        children:
-          - name: "on-campus"
-            url: "/en/activities/oncampus/"
-            weight: 1
-          - name: "off-campus"
-            url: "/en/activities/offcampus/"
-            weight: 2
-        weight: 40    
-      - name: "Contact"
-        url: "/en/contact/"
-        weight: 50
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+    description: "Seowon Choi's personal portfolio"
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
 ko:
   languageCode: ko
   contentDir: content/ko
-  title: "최서원의 포트폴리오"
-  weight: 1
+  title: 최서원의 포트폴리오
   params:
-    description: "전북대학교 컴퓨터공학부 최서원의 블로그입니다."
-    author: admin
-  menu:
-    main:
-      - name: "홈"
-        url: "/"
-        weight: 10
-
-      - name: "소개"
-        url: "about/"
-        weight: 20
-
-      - name: "프로젝트"
-        url: "projects/"
-        weight: 30
-
-      - name: "활동"
-        url: "activities/"
-        weight: 40
-        children:
-          - name: "교내활동"
-            url: "#oncampus"
-            weight: 1
-          - name: "교외활동"
-            url: "#offcampus"
-            weight: 2
-
-      - name: "연락처"
-        url: "contact/"
-        weight: 50
-
-     
-    
+    description: 최서원의 개인 포트폴리오입니다.
