@@ -1,9 +1,8 @@
 # contact
 
-
-📧 [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
-☎  [+82-10-9548-9976](tel:+821095489976)  
-📍 Building 7, College of Engineering,Jeonbuk National University, Jeonju 54896, South Korea  
+<i class="fas fa-envelope"></i> [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
+<i class="fas fa-phone"></i> [+82-10-9548-9976](tel:+821095489976)  
+<i class="fas fa-map-marker-alt"></i> Building 7, College of Engineering,Jeonbuk National University, Jeonju 54896, South Korea 
 
 
 <iframe 
