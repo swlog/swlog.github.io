@@ -3,13 +3,51 @@
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
 
+# main:
+#   - name: 홈
+#     url: /
+#     weight: 10
+#   - name: 이력서
+#     url: about/
+#     weight: 20
+#   - name: 이력서
+#     url: about/
+#     weight: 30
+#   - name: 문의
+#     url: contact/
+#     weight: 40
+
 main:
-  - name: 홈
-    url: /
-    weight: 10
-  - name: 이력서
-    url: about/
-    weight: 20
-  - name: 문의
-    url: contact/
-    weight: 30
+  - name: "홈"
+    url: "/"
+    weight: 1
+
+  - name: "프로필"
+    identifier: "profile"
+    weight: 2
+    children:
+      - name: "소개"
+        url: "#about"
+        weight: 1
+      - name: "학력"
+        url: "#education"
+        weight: 2
+
+  - name: "프로젝트"
+    identifier: "projects"
+    weight: 3
+
+  - name: "활동"
+    identifier: "activities"
+    weight: 4
+    children:
+      - name: "교내활동"
+        url: "#oncampus"
+        weight: 1
+      - name: "교외활동"
+        url: "#offcampus"
+        weight: 2
+
+  - name: "연락처"
+    url: "#contact"
+    weight: 5
