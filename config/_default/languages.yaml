@@ -32,6 +32,13 @@ en:
         weight: 30
       - name: "Activity"
         url: "/en/activites/"
+        children:
+          - name: "on-campus"
+            url: "/oncampus"
+            weight: 1
+          - name: "off-campus"
+            url: "/offcampus"
+            weight: 2
         weight: 40    
       - name: "Contact"
         url: "/en/contact/"
