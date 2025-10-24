@@ -1,4 +1,5 @@
 <style>
+/* 전체 슬라이더 영역 */
 .fullbleed {
   width: 100vw;
   position: relative;
@@ -10,6 +11,7 @@
   overflow: hidden;
 }
 
+/* 슬라이드 아이템 */
 #homeCarousel .carousel-item {
   min-height: 90vh;
   background-size: cover;
@@ -20,7 +22,7 @@
 }
 
 /* 중앙 텍스트 */
-#homeCarousel .carousel-caption {
+#homeCarousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   top: 55%;
   left: 50%;
@@ -33,67 +35,67 @@
   transition: opacity .5s ease, transform .6s ease;
 }
 
-#homeCarousel .carousel-caption h1 {
+#homeCarousel .carousel-inner .carousel-item .carousel-caption h1 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #ffffff;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
-#homeCarousel .carousel-caption p {
+#homeCarousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255,255,255,0.85);
 }
 
-#homeCarousel .carousel-item.active .carousel-caption {
+#homeCarousel .carousel-inner .carousel-item.active .carousel-caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
 /* 텍스트 애니메이션 */
-#homeCarousel .carousel-item .carousel-caption h1,
-#homeCarousel .carousel-item .carousel-caption p {
+#homeCarousel .carousel-inner .carousel-item .carousel-caption h1,
+#homeCarousel .carousel-inner .carousel-item .carousel-caption p {
   opacity: 0;
   transform: translateY(14px);
 }
-#homeCarousel .carousel-item.active .carousel-caption h1 {
+#homeCarousel .carousel-inner .carousel-item.active .carousel-caption h1 {
   opacity: 1;
   transform: none;
   transition: all .6s ease .05s;
 }
-#homeCarousel .carousel-item.active .carousel-caption p {
+#homeCarousel .carousel-inner .carousel-item.active .carousel-caption p {
   opacity: 1;
   transform: none;
   transition: all .6s ease .18s;
 }
 
-/* ✅ 하단 인디케이터 — 초소형 미니멀 버전 */
-#homeCarousel .carousel-indicators {
-  bottom: 0.6rem !important;
-  gap: 4px !important;
+/* ✅ 하단 인디케이터 - dot형 */
+#homeCarousel.carousel .carousel-indicators {
+  bottom: 1.2rem;
+  gap: 8px;
 }
 
-#homeCarousel .carousel-indicators [data-bs-target] {
-  width: 12px !important;          /* 매우 짧게 */
-  height: 1px !important;          /* 매우 얇게 */
-  border: 0 !important;
-  border-radius: 999px !important;
-  background: rgba(255,255,255,0.25) !important;
-  opacity: 1 !important;
-  box-shadow: none !important;
-  transition: width .25s ease, background .25s ease, transform .25s ease !important;
+#homeCarousel.carousel .carousel-indicators button[data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  opacity: 1;
 }
 
-#homeCarousel .carousel-indicators .active {
-  width: 18px !important;
-  background: rgba(255,255,255,0.8) !important;
-  transform: translateY(-0.5px) !important;
+#homeCarousel.carousel .carousel-indicators button[data-bs-target].active {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-#homeCarousel .carousel-indicators [data-bs-target]:hover {
-  background: rgba(255,255,255,0.5) !important;
-  transform: translateY(-0.5px) !important;
+#homeCarousel.carousel .carousel-indicators button[data-bs-target]:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.15);
 }
 
 /* 반응형 */
