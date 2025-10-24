@@ -15,11 +15,11 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  text-align: center; /* 텍스트 중앙 */
+  text-align: center;
   position: relative;
 }
 
-/* 중앙 텍스트 완전 가운데 정렬 */
+/* 중앙 텍스트 */
 #homeCarousel .carousel-caption {
   position: absolute;
   top: 55%;
@@ -34,16 +34,16 @@
 }
 
 #homeCarousel .carousel-caption h1 {
-  font-size: 2.2rem;        /* 글씨 크기 */
-  font-weight: 700;         /* 두께 (진하게) */
-  color: #ffffff;           /* 글씨 색상 (흰색) */
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* 배경 위에서도 선명하게 */
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 #homeCarousel .carousel-caption p {
-  font-size: 1rem;          /* 본문 크기 */
-  font-weight: 400;         /* 두께 (보통) */
-  color: rgba(255,255,255,0.85); /* 약간 부드러운 흰색 */
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
 }
 
 #homeCarousel .carousel-item.active .carousel-caption {
@@ -68,41 +68,39 @@
   transition: all .6s ease .18s;
 }
 
-/* 하단 인디케이터 (초소형 미니멀 스타일) */
+/* ✅ 하단 인디케이터 — 초소형 미니멀 버전 */
 #homeCarousel .carousel-indicators {
-  bottom: 0.8rem; /* 화면 아래쪽과의 거리 */
-  gap: 4px;       /* 버튼 간 간격 최소화 */
+  bottom: 0.6rem !important;
+  gap: 4px !important;
 }
 
 #homeCarousel .carousel-indicators [data-bs-target] {
-  width: 14px;               /* 아주 짧게 (22 → 14) */
-  height: 1px;               /* 거의 선처럼 얇게 (1.5 → 1) */
-  border: 0;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.25); /* 흐린 흰색 */
-  opacity: 1;
-  box-shadow: none;          /* 그림자 완전 제거 */
-  transition:
-    width .25s ease,
-    background .25s ease,
-    transform .25s ease;
+  width: 12px !important;          /* 매우 짧게 */
+  height: 1px !important;          /* 매우 얇게 */
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.25) !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  transition: width .25s ease, background .25s ease, transform .25s ease !important;
 }
 
 #homeCarousel .carousel-indicators .active {
-  width: 20px;               /* 활성 막대도 작게 (30 → 20) */
-  background: rgba(255,255,255,0.8);
-  transform: translateY(-0.5px);
+  width: 18px !important;
+  background: rgba(255,255,255,0.8) !important;
+  transform: translateY(-0.5px) !important;
 }
 
 #homeCarousel .carousel-indicators [data-bs-target]:hover {
-  background: rgba(255,255,255,0.5);
-  transform: translateY(-0.5px);
+  background: rgba(255,255,255,0.5) !important;
+  transform: translateY(-0.5px) !important;
 }
 
-
+/* 반응형 */
 @media (max-width: 992px) {
   #homeCarousel .carousel-item { min-height: 60vh; }
-  #homeCarousel .carousel-caption h1 { font-size: 2rem; }
+  #homeCarousel .carousel-caption h1 { font-size: 1.8rem; }
+  #homeCarousel .carousel-caption p { font-size: 0.9rem; }
 }
 </style>
 
@@ -110,6 +108,7 @@
   <div id="homeCarousel" class="carousel slide carousel-fade"
        data-bs-ride="carousel"
        data-bs-interval="5000">
+
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
@@ -121,8 +120,8 @@
       <div class="carousel-item active"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide1.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">최서원의 포트폴리오</h1>
-          <p class="lead">프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
+          <h1>최서원의 포트폴리오</h1>
+          <p>프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
         </div>
       </div>
 
@@ -130,8 +129,8 @@
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide2.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">활동</h1>
-          <p class="lead">즐거움과 배움이 있는 활동</p>
+          <h1>활동</h1>
+          <p>즐거움과 배움이 있는 활동</p>
         </div>
       </div>
 
@@ -139,8 +138,8 @@
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide3.jpg');">
         <div class="carousel-caption">
-          <h1 class="display-3 fw-semibold">연락하기</h1>
-          <p class="lead">언제나 연락은 환영입니다.</p>
+          <h1>연락하기</h1>
+          <p>언제나 연락은 환영입니다.</p>
         </div>
       </div>
     </div>
@@ -159,5 +158,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-        
