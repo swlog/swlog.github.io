@@ -34,10 +34,10 @@ en:
         url: "/en/activites/"
         children:
           - name: "on-campus"
-            url: "/oncampus"
+            url: "/en/activities/oncampus/"
             weight: 1
           - name: "off-campus"
-            url: "/offcampus"
+            url: "/en/activities/offcampus/"
             weight: 2
         weight: 40    
       - name: "Contact"

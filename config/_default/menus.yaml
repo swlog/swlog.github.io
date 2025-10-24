@@ -35,10 +35,10 @@ main:
     weight: 40
     children:
       - name: "교내활동"
-        url: "/oncampus"
+        url: "/ko/activities/oncampus/"
         weight: 1
       - name: "교외활동"
-        url: "/offcampus"
+        url: "/ko/activities/offcampus/"
         weight: 2
 
   - name: "연락처"
