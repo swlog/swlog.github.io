@@ -6,7 +6,6 @@ tags:
   - React
   - JavaScript
   - Web
-date: 2025-06-10
 image:
   filename: "uploads/netflix-clone.jpg"
   focal_point: "Top"
