@@ -32,14 +32,18 @@ main:
 
   - name: "활동"
     url: "/ko/activities/"
+    identifier: "activities"
     weight: 40
-    children:
-      - name: "교내활동"
-        url: "/ko/activities/oncampus/"
-        weight: 1
-      - name: "교외활동"
-        url: "/ko/activities/offcampus/"
-        weight: 2
+
+  - name: "교내활동"
+    url: "/ko/activities/oncampus/"
+    parent: "activities"
+    weight: 1
+
+  - name: "교외활동"
+    url: "/ko/activities/offcampus/"
+    parent: "activities"
+    weight: 2
 
   - name: "연락처"
     url: "/ko/contact/"
