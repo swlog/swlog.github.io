@@ -96,3 +96,11 @@ outputs:
     - RSS
     - Sitemap
 
+header:
+  navbar:
+    enable: true
+    align: l
+    show_logo: true
+    show_language: true
+    show_day_night: true
+    show_search: true
