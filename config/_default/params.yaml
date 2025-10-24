@@ -40,7 +40,7 @@ header:
     show_language: true
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    highlight_active_link: true
     logo:
       image: 'assets/media/swlog_logo.jpg'     # 로고 파일 경로
       alt_text: '최서원의 로고'
