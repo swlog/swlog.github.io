@@ -8,6 +8,6 @@ tags:
 date: 2025-06-10
 image:
   filename: "uploads/netflix-clone.jpg"
-  focal_point: "center"
+  focal_point: "top"
   preview_only: false
 ---

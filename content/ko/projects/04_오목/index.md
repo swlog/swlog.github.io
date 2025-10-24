@@ -1,5 +1,6 @@
 ---
 title: "오목"
+weight: 4
 summary: "React와 TMDB API를 활용한 영화 스트리밍 사이트 클론입니다."
 tags:
   - React
