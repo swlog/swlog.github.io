@@ -68,39 +68,35 @@
   transition: all .6s ease .18s;
 }
 
-/* 하단 인디케이터 (작고 얇은 알약 스타일) */
+/* 하단 인디케이터 (더 작고 미니멀한 스타일) */
 #homeCarousel .carousel-indicators {
-  bottom: 1.5rem; /* 위치를 살짝 위로 (공간 조정) */
-  gap: 8px;       /* 인디케이터 간격 약간 좁힘 */
+  bottom: 1rem; /* 약간 위로 올림 */
+  gap: 6px;     /* 간격 살짝 좁힘 */
 }
 
 #homeCarousel .carousel-indicators [data-bs-target] {
-  width: 32px;               /* 길이: 기존 50 → 32 */
-  height: 2px;               /* 두께: 기존 3 → 2 */
+  width: 22px;               /* 길이 더 짧게 (32 → 22) */
+  height: 1.5px;             /* 두께 얇게 (2 → 1.5) */
   border: 0;
   border-radius: 999px;
-  background: rgba(255,255,255,.35);
+  background: rgba(255,255,255,.25); /* 좀 더 은은하게 */
   opacity: 1;
-  box-shadow: 0 1px 6px rgba(0,0,0,.2) inset, 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: none;          /* 그림자 제거로 깔끔하게 */
   transition:
     width .25s ease,
     background .25s ease,
-    transform .25s ease,
-    box-shadow .25s ease;
-  position: relative;
-  overflow: hidden;
+    transform .25s ease;
 }
 
 #homeCarousel .carousel-indicators .active {
-  width: 40px;               /* 활성 막대도 조금만 길게 */
-  background: rgba(255,255,255,.9);
+  width: 30px;               /* 활성 막대 길이 줄임 (40 → 30) */
+  background: rgba(255,255,255,.8);
   transform: translateY(-1px);
-  box-shadow: 0 0 8px rgba(255,255,255,.5);
 }
 
 #homeCarousel .carousel-indicators [data-bs-target]:hover {
+  background: rgba(255,255,255,.5);
   transform: translateY(-1px);
-  background: rgba(255,255,255,.6);
 }
 
 
