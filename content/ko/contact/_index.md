@@ -1,9 +1,9 @@
 # 문의
 
 
-📧 [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
-☎  [+82-10-9548-9976](tel:+821095489976)  
-📍 전북대학교 공과대학 7호관, 전주시, 전라북도 54896  
+<i class="fas fa-envelope"></i> [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
+<i class="fas fa-phone"></i> [+82-10-9548-9976](tel:+821095489976)  
+<i class="fas fa-map-marker-alt"></i> 전북대학교 공과대학 7호관, 전주시, 전라북도 54896  
 
 
 <iframe 
