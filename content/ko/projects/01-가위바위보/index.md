@@ -1,18 +1,16 @@
 ---
-title: "가위바위보"
-date: 2024-06-07
-summary: "React와 TMDB API를 활용한 영화 스트리밍 사이트 클론입니다."
-tags:
-  - React
-  - JavaScript
-  - Web
+title: "가위바위보 게임"
+type: project
+summary: "Python으로 구현한 간단한 CLI 기반 가위바위보 게임"
+date: 2024-03-10
+weight: 1
+featured: true         # ✅ 대표 이미지 표시용 (구버전 테마 대응)
 image:
-  filename: "uploads/netflix-clone.jpg"
-  focal_point: "top"
-  preview_only: false
+  filename: "rps.jpg"
+  caption: "터미널 기반 가위바위보 게임"
+  focal_point: "Center"
 ---
 
-![가위바위보 게임 실행 화면](rps.jpg)
 
 ## 🧩 프로젝트 개요
 Python을 사용해 콘솔 환경에서 동작하는 **가위바위보 게임**을 제작했습니다.  
