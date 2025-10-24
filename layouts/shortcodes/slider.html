@@ -1,5 +1,4 @@
 <style>
-/* 전체 영역 */
 .fullbleed {
   width: 100vw;
   position: relative;
@@ -11,7 +10,6 @@
   overflow: hidden;
 }
 
-/* 슬라이드 */
 #homeCarousel .carousel-item {
   min-height: 90vh;
   background-size: cover;
@@ -47,13 +45,12 @@
   color: rgba(255,255,255,0.85);
 }
 
-/* 활성 슬라이드 */
 #homeCarousel .carousel-item.active .carousel-caption {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
 
-/* 텍스트 등장 효과 */
+/* 텍스트 애니메이션 */
 #homeCarousel .carousel-item .carousel-caption h1,
 #homeCarousel .carousel-item .carousel-caption p {
   opacity: 0;
@@ -70,33 +67,33 @@
   transition: all .6s ease .18s;
 }
 
-/* ✅ 하단 인디케이터 - 아주 작고 얇은 바 형태 */
-#homeCarousel .carousel-indicators {
-  bottom: 1rem;
+/* ✅ 하단 인디케이터 — 아주 작고 얇은 바형 */
+#homeCarousel.carousel .carousel-indicators {
+  bottom: 1.2rem;
   gap: 6px;
 }
 
-#homeCarousel .carousel-indicators [data-bs-target] {
-  width: 22px;              /* 길이 작게 */
-  height: 1.5px;            /* 두께 매우 얇게 */
+#homeCarousel.carousel .carousel-indicators button[data-bs-target] {
+  width: 14px;               /* 아주 짧은 막대 */
+  height: 1.5px;             /* 매우 얇음 */
   border: none;
-  border-radius: 999px;     /* 끝을 둥글게 */
+  border-radius: 999px;
   background: rgba(255,255,255,0.25);
   opacity: 1;
-  box-shadow: 0 0 3px rgba(0,0,0,0.25);
-  transition: all 0.25s ease;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
-#homeCarousel .carousel-indicators [data-bs-target].active {
-  width: 32px;              /* 활성화 시 약간 길게 */
-  background: rgba(255,255,255,0.85);
+#homeCarousel.carousel .carousel-indicators button[data-bs-target].active {
+  width: 24px;               /* 활성화 시 살짝 더 길게 */
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 0 6px rgba(255,255,255,0.5);
-  transform: translateY(-1px);
+  transform: translateY(-0.5px);
 }
 
-#homeCarousel .carousel-indicators [data-bs-target]:hover {
+#homeCarousel.carousel .carousel-indicators button[data-bs-target]:hover {
   background: rgba(255,255,255,0.6);
-  transform: translateY(-0.5px);
+  transform: translateY(-0.3px);
 }
 
 /* 반응형 */
@@ -104,8 +101,8 @@
   #homeCarousel .carousel-item { min-height: 60vh; }
   #homeCarousel .carousel-caption h1 { font-size: 1.8rem; }
   #homeCarousel .carousel-caption p { font-size: 0.9rem; }
-  #homeCarousel .carousel-indicators [data-bs-target] {
-    width: 18px;
+  #homeCarousel.carousel .carousel-indicators button[data-bs-target] {
+    width: 10px;
     height: 1px;
   }
 }
@@ -130,6 +127,7 @@
           <p>프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
         </div>
       </div>
+
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide2.jpg');">
         <div class="carousel-caption">
@@ -137,6 +135,7 @@
           <p>즐거움과 배움이 있는 활동</p>
         </div>
       </div>
+
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide3.jpg');">
         <div class="carousel-caption">
