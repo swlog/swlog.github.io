@@ -55,32 +55,41 @@
   transition: all .6s ease .18s;
 }
 
-/* 하단 인디케이터: 하이픈형 */
+/* 하단 인디케이터 (길고 얇은 알약 스타일) */
 #homeCarousel .carousel-indicators {
   bottom: 2rem;
-  gap: 12px; /* 막대 간 간격 */
+  gap: 10px; /* 인디케이터 간격 */
 }
 
 #homeCarousel .carousel-indicators [data-bs-target] {
-  width: 45px;           /* 짧은 막대 길이 */
-  height: 2px;           /* 얇은 두께 */
-  border: none;
-  border-radius: 2px;    /* 살짝 둥글게 */
-  background: rgba(255,255,255,.3);
-  opacity: 1;
-  transition: all .25s ease;
+  width: 50px;               /* 길이: 기본보다 조금 더 길게 */
+  height: 3px;               /* 두께: 얇게 */
+  border: 0;
+  border-radius: 999px;      /* 양끝이 둥근 하이픈 모양 */
+  background: rgba(255,255,255,.35); /* 살짝 투명한 흰색 */
+  opacity: 1;                /* Bootstrap 기본 opacity 무시 */
+  box-shadow: 0 2px 8px rgba(0,0,0,.25) inset, 0 1px 3px rgba(0,0,0,.2);
+  transition: 
+    width .25s ease,
+    background .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 #homeCarousel .carousel-indicators .active {
-  background: rgba(255,255,255,1); /* 완전 흰색 */
-  width: 45px;                     /* 약간 길게 */
-  height: 2px;
-  box-shadow: 0 0 6px rgba(255,255,255,.5);
+  width: 60px;               /* 활성 막대는 살짝 더 길게 */
+  background: rgba(255,255,255,.9); /* 거의 흰색 */
+  transform: translateY(-1px);      /* 살짝 위로 띄움 */
+  box-shadow: 0 0 10px rgba(255,255,255,.6); /* 은은한 발광 */
 }
 
 #homeCarousel .carousel-indicators [data-bs-target]:hover {
+  transform: translateY(-1px);
   background: rgba(255,255,255,.6);
 }
+
 
 @media (max-width: 992px) {
   #homeCarousel .carousel-item { min-height: 60vh; }
