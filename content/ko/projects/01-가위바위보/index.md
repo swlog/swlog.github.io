@@ -30,7 +30,7 @@ Python을 사용해 콘솔 환경에서 동작하는 **가위바위보 게임**�
 
 ---
 
-## <i class="fab fa-github"></i> 코드 다운로드
-[👉 rps_code.zip 다운로드](rps_code.zip)
+## <i class="fab fa-dropbox"></i> 코드 다운로드
+[ rps_code.zip 다운로드](rps_code.zip)
 
 
