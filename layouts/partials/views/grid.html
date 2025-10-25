@@ -1,4 +1,4 @@
-{{/* 4-column horizontal grid cards */}}
+{{/* Custom horizontal grid cards (ASA style) */}}
 <div class="project-grid">
   {{ range .items }}
     {{ $item := . }}
@@ -16,8 +16,17 @@
         </div>
         {{ end }}
 
-        <div class="project-body">
+        <div class="project-content">
+          {{ if $item.Params.tags }}
+          <div class="project-tags">
+            {{ range $item.Params.tags }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+
           <h3 class="project-title">{{ $item.Title }}</h3>
+
           {{ if $item.Params.summary }}
           <p class="project-summary">{{ $item.Params.summary | markdownify }}</p>
           {{ end }}
