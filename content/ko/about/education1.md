@@ -1,5 +1,5 @@
 ---
-widget: education1
+widget: experience
 headless: true
 weight: 20
 
