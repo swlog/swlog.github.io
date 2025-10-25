@@ -1,64 +1,117 @@
 /* =====================================================
-   SWLOG — Card Hover Lift & Brighten Effect
+   SWLOG — Project Preview Card (Bright Film + Text ver.)
    ===================================================== */
 
-/* 🔹 프로젝트 카드 전체 */
-.article-card,
-.project-card,
-.card {
+/* 🔹 카드 기본 스타일 */
+.project-card, .article-card {
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
 }
 
-/* 🔹 마우스 올렸을 때 카드가 살짝 올라감 + 그림자 진해짐 */
-.article-card:hover,
-.project-card:hover,
-.card:hover {
+.project-card:hover, .article-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
 }
 
-/* 🔹 카드 이미지 (hover 시 밝게) */
-.article-card img,
-.project-card img,
-.card img {
+/* 🔹 이미지 공통 스타일 */
+.project-card img, .article-card img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
   transition: filter 0.4s ease, transform 0.4s ease;
 }
 
-/* hover 시 이미지 살짝 확대 + 밝게 */
-.article-card:hover img,
-.project-card:hover img,
-.card:hover img {
-  filter: brightness(1.18);     /* ✅ 18% 더 밝게 */
-  transform: scale(1.05);       /* ✅ 약간 확대 */
+/* hover 시 이미지 밝기+확대 */
+.project-card:hover img, .article-card:hover img {
+  filter: brightness(1.1);
+  transform: scale(1.05);
 }
 
-/* 🔹 카드 텍스트 영역 */
-.article-card .card-body,
+/* =====================================================
+   필름(overlay) 효과
+   ===================================================== */
+.project-card .card-image,
+.article-card .card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ 흰색 반투명 필름 (기본은 투명, hover 시 활성화) */
+.project-card .card-image::after,
+.article-card .card-image::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255,255,255,0.6); /* 🤍 흰색 투명 필름 */
+  backdrop-filter: blur(5px);        /* 유리질감 */
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 12px;
+}
+
+/* hover 시 필름 표시 */
+.project-card:hover .card-image::after,
+.article-card:hover .card-image::after {
+  opacity: 1;
+}
+
+/* ✅ 오버레이 텍스트 */
+.project-card .card-image::before,
+.article-card .card-image::before {
+  content: "자세히 보기";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.8);
+}
+
+/* hover 시 텍스트 등장 */
+.project-card:hover .card-image::before,
+.article-card:hover .card-image::before {
+  opacity: 1;
+}
+
+/* =====================================================
+   텍스트 본문 (제목 / 요약)
+   ===================================================== */
 .project-card .card-body,
-.card .card-body {
+.article-card .card-body {
   padding: 1.2rem;
+}
+
+.project-card .card-title,
+.article-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #1b1b1b;
   transition: color 0.3s ease;
 }
 
-/* 제목 강조 (hover 시 살짝 파랗게) */
-.article-card:hover .card-title,
 .project-card:hover .card-title,
-.card:hover .card-title {
-  color: #1e63ff;
+.article-card:hover .card-title {
+  color: #3A86FF; /* SWLOG 포인트 블루 */
 }
 
-/* 🔹 카드 전체에 부드러운 커서 표시 */
-.article-card,
-.project-card,
-.card {
-  cursor: pointer;
+.project-card .card-summary,
+.article-card .card-summary {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.45;
 }
 
 
