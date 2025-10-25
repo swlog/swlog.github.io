@@ -1,6 +1,6 @@
-{{/* Simple Vertical List Card Layout for Projects */}}
+{{/* 2x2 Horizontal Card Layout */}}
 
-<div class="card-list">
+<div class="card-grid-2x2">
 
   {{ range $index, $item := .items }}
     {{ $has_attachments := partial "functions/has_attachments" $item }}
@@ -11,31 +11,31 @@
       {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
     {{ end }}
 
-    {{/* 요약 가져오기 */}}
+    {{/* Summary 가져오기 */}}
     {{ $summary := "" }}
     {{ if $item.Params.summary }}
       {{ $summary = $item.Params.summary | markdownify | emojify }}
+    {{ else if $item.Params.abstract }}
+      {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
     {{ else if $item.Summary }}
       {{ $summary = $item.Summary }}
     {{ end }}
 
     {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
-    <div class="card-list-item">
+    <div class="card-2x2">
       {{ with $resource }}
-        {{ $image := .Resize "400x250" }}
+        {{ $image := .Resize "600x400" }}
         {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-        <div class="card-list-image">
-          <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-            <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy">
-          </a>
-        </div>
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" loading="lazy">
+        </a>
       {{ end }}
 
-      <div class="card-list-content">
-        <h3 class="card-title">
+      <div class="card-body">
+        <h4 class="card-title">
           <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
-        </h3>
+        </h4>
 
         {{ with $summary }}
         <p class="card-summary">{{ . }}</p>
