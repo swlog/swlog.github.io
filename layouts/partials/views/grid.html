@@ -1,5 +1,5 @@
-{{/* Grid View for Projects */}}
-<div class="grid-container">
+{{/* 4-column horizontal grid cards */}}
+<div class="project-grid">
   {{ range .items }}
     {{ $item := . }}
     {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
@@ -8,18 +8,18 @@
       {{ $image = .Fill "800x450 Smart" }}
     {{ end }}
 
-    <div class="grid-card">
-      <a href="{{ $item.RelPermalink }}" class="grid-link">
+    <div class="project-card">
+      <a href="{{ $item.RelPermalink }}" class="project-link">
         {{ with $image }}
-        <div class="grid-image">
+        <div class="project-image">
           <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}">
         </div>
         {{ end }}
 
-        <div class="grid-overlay">
-          <h3 class="grid-title">{{ $item.Title }}</h3>
+        <div class="project-body">
+          <h3 class="project-title">{{ $item.Title }}</h3>
           {{ if $item.Params.summary }}
-          <p class="grid-summary">{{ $item.Params.summary | markdownify }}</p>
+          <p class="project-summary">{{ $item.Params.summary | markdownify }}</p>
           {{ end }}
         </div>
       </a>
