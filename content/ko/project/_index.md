@@ -12,8 +12,8 @@ sections:
         folders:
           - project          # ✅ content/project/ 내부의 md 파일 자동 불러오기
     design:
-      view: list             # ✅ 리스트 형식으로 표시
-      columns: 1
+      view: grid            # ✅ 리스트 형식으로 표시
+      columns: 4
       gap: 20
       background:
         color: "#fffdf8"     # 부드러운 배경색
