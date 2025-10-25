@@ -28,8 +28,6 @@ Python의 기본 GUI 라이브러리인 **Tkinter**를 활용해,
 
 ---
 
----
-
 ## <i class="fab fa-steam-symbol"></i> 주요 기능
 - `Tkinter`를 이용한 간단한 GUI 인터페이스  
 - `random.choice()`를 이용한 컴퓨터 선택  
@@ -39,6 +37,6 @@ Python의 기본 GUI 라이브러리인 **Tkinter**를 활용해,
 ---
 
 ## <i class="fab fa-dropbox"></i> 코드 다운로드
-[ rps_code.zip 다운로드](rps_code.zip)
+</> [rock_scissors_paper.py 다운로드](/uploads/rock_scissors_paper.py)
 
 
