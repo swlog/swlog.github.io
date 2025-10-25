@@ -8,12 +8,8 @@ tags:
 image:
   filename: "rps.jpg"          # ✅ 파일명과 동일해야 함
   focal_point: "center"        # ✅ 중앙 정렬
-  preview_only: false          # ✅ 카드에 표시됨
+  preview_only: false        # ✅ 카드에 표시됨
 ---
-
-
----
-
 ## <i class="fab fa-python"></i> 프로젝트 개요
 
 이 프로젝트는 **내가 파이썬으로 처음 만든 프로그램**입니다.  

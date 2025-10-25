@@ -11,12 +11,6 @@ image:
   preview_only: false
 ---
 
-<p align="center">
-  <img src="/uploads/movie_review.jpg" alt="영화 리뷰 감성 분석 이미지" width="80%">
-</p>
-
----
-
 ## <i class="fab fa-python"></i> 프로젝트 개요
 
 이 프로젝트는 **텍스트 데이터 분석에 도전한 자연어 처리 입문 프로젝트**입니다.  

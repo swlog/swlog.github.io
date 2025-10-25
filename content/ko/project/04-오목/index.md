@@ -12,11 +12,6 @@ image:
 ---
 
 
-<p align="center">
-  <img src="/uploads/omok.jpeg" alt="오목" width="80%">
-</p>
-
----
 
 ## <i class="fab fa-python"></i> 프로젝트 개요
 

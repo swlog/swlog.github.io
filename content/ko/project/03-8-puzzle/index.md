@@ -11,11 +11,6 @@ image:
   preview_only: false
 ---
 
-<p align="center">
-  <img src="/uploads/puzzle.jpg" alt="8퍼즐 문제 시각화 이미지" width="100%">
-</p>
-
----
 ## <i class="fab fa-python"></i> 프로젝트 개요
 
 이 프로젝트는 **탐색 알고리즘을 이해하기 위한 Python 프로젝트**로,  
