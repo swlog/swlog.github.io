@@ -27,7 +27,7 @@ main:
     weight: 20
 
   - name: "프로젝트"
-    url: "/ko/projects/"
+    url: "/ko/project/"
     weight: 30
 
   # 상위 메뉴 (활동)
