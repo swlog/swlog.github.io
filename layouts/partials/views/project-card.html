@@ -1,0 +1,22 @@
+{/* layouts/partials/custom/project-card.html */}}
+<div class="project-card">
+  <div class="card">
+    {{ with .Params.image.filename }}
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-img">
+    {{ end }}
+
+    <div class="card-body">
+      <h3 class="card-title">{{ .Title }}</h3>
+
+      {{ with .Summary }}
+        <p class="card-summary">{{ . }}</p>
+      {{ end }}
+
+      {{ with .Date }}
+        <p class="card-date">{{ .Format "2006-01-02" }}</p>
+      {{ end }}
+
+      <a href="{{ .RelPermalink }}" class="card-btn">자세히 보기</a>
+    </div>
+  </div>
+</div>
