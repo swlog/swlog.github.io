@@ -9,7 +9,7 @@ sections:
       text: '<i class="fab fa-windows"></i>&nbsp;진행한 주요 프로젝트<br>'
       filters:
         folders:
-          - projects
+          - project
     design:
       view: card
       columns: 4
