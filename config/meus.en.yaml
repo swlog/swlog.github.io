@@ -1,7 +1,7 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: "CHOISEOWON'S PORTFOLIO"
+  title: "SWLOG"
   weight: 2
   params:
     description: "Seowon Choi's personal portfolio and AI projects."

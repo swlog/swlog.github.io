@@ -6,13 +6,13 @@
 en:
   languageCode: en-us
   contentDir: content/en
-  title: CHOISEOWON'S PORTFOLIO
+  title: SWLOG
   params:
     description: "Seowon Choi's personal portfolio"
 
 ko:
   languageCode: ko-kr
   contentDir: content/ko
-  title: 최서원의 포트폴리오
+  title: SWLOG
   params:
     description: 최서원의 개인 포트폴리오입니다.
