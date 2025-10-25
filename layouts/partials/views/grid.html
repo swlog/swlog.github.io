@@ -1,37 +1,110 @@
-{{/* Custom horizontal grid cards (ASA style) */}}
+<style>
+  /* === 카드 2행 2열 레이아웃 === */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ✅ 가로 2개 */
+    gap: 30px;                              /* ✅ 카드 간격 */
+    justify-items: center;
+    padding: 30px 0;
+  }
+
+  /* 반응형: 작은 화면에서는 한 줄에 1개 */
+  @media (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* === 개별 카드 === */
+  .project-card {
+    background: #fff;
+    border-radius: 20px;                    /* ✅ 둥근 네모 */
+    overflow: hidden;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .project-body {
+    padding: 1.2rem 1.4rem 1.6rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+
+  .project-summary {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+</style>
+
 <div class="project-grid">
-  {{ range .items }}
-    {{ $item := . }}
-    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
-    {{ $image := "" }}
-    {{ with $resource }}
-      {{ $image = .Fill "800x450 Smart" }}
-    {{ end }}
-
-    <div class="project-card">
-      <a href="{{ $item.RelPermalink }}" class="project-link">
-        {{ with $image }}
-        <div class="project-image">
-          <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}">
-        </div>
-        {{ end }}
-
-        <div class="project-content">
-          {{ if $item.Params.tags }}
-          <div class="project-tags">
-            {{ range $item.Params.tags }}
-            <span class="tag">{{ . }}</span>
-            {{ end }}
-          </div>
-          {{ end }}
-
-          <h3 class="project-title">{{ $item.Title }}</h3>
-
-          {{ if $item.Params.summary }}
-          <p class="project-summary">{{ $item.Params.summary | markdownify }}</p>
-          {{ end }}
-        </div>
-      </a>
+  <!-- 카드 1 -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="/uploads/rps.jpg" alt="가위바위보 게임">
     </div>
-  {{ end }}
+    <div class="project-body">
+      <h3 class="project-title">가위바위보 게임</h3>
+      <p class="project-summary">
+        Tkinter를 활용하여 만든 GUI 기반 Python 가위바위보 프로그램입니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 카드 2 -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="/uploads/ai_omok.jpg" alt="오목 AI">
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">오목 게임 AI</h3>
+      <p class="project-summary">
+        Minimax 알고리즘으로 구현한 인공지능 오목 프로그램입니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 카드 3 -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="/uploads/movie_sentiment.jpg" alt="감성 분석">
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">영화 리뷰 감성 분석</h3>
+      <p class="project-summary">
+        Naive Bayes를 사용하여 영화 리뷰의 긍정/부정을 분류합니다.
+      </p>
+    </div>
+  </div>
+
+  <!-- 카드 4 -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="/uploads/project4.jpg" alt="8퍼즐 프로그램">
+    </div>
+    <div class="project-body">
+      <h3 class="project-title">8퍼즐 프로그램</h3>
+      <p class="project-summary">
+        BFS 탐색으로 최단 이동 경로를 찾는 8퍼즐 게임 프로젝트입니다.
+      </p>
+    </div>
+  </div>
 </div>
