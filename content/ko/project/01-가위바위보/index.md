@@ -2,7 +2,7 @@
 title: 가위바위보 게임
 summary: Python으로 구현한 간단한 CLI 기반 가위바위보 게임
 date: 2025-04-01
-type: projectS
+type: project
 tags:
   - PYTHON
 image:
