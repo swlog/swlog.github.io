@@ -1,5 +1,5 @@
 ---
-widget: portfolio
+widget: collection
 headless: true
 active: true
 title: "프로젝트"
