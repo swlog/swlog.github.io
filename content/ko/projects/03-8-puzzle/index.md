@@ -1,13 +1,12 @@
 ---
-title: "8-puzzle"
-date: 2025-04-07
-summary: "React와 TMDB API를 활용한 영화 스트리밍 사이트 클론입니다."
-tags:
-  - React
-  - JavaScript
-  - Web
+title: "8퍼즐 프로그램"
+type: project
+summary: "파이썬으로 구현한 상태공간 탐색 기반 8퍼즐 프로그램"
+date: 2024-04-05
+weight: 3
+featured: true
 image:
-  filename: "uploads/netflix-clone.jpg"
-  focal_point: "Top"
-  preview_only: false
+  filename: "uploads/eightpuzzle.jpg"
+  caption: "퍼즐"
+  focal_point: "Center"
 ---
