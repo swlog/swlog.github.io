@@ -11,4 +11,4 @@ design:
   view: grid         # ✅ 1번째 뷰
   columns: 3
   gap: 16
-—
+---
