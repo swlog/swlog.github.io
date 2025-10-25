@@ -2,7 +2,7 @@
 <div class="project-card">
   <div class="card">
     {{ with .Params.image.filename }}
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-img">
+      <img src="{{ printf "%s%s" (.Permalink) (.Params.image.filename) }}" alt="{{ .Title }}" class="card-img">
     {{ end }}
 
     <div class="card-body">

@@ -1,10 +1,9 @@
 ---
-widget: portfolio
+widget: blank
 headless: true
 active: true
 title: "My Projects"
 weight: 40
-view: project-card
 ---
 
 <div class="project-grid">
@@ -12,4 +11,5 @@ view: project-card
     {{ partial "custom/project-card.html" . }}
   {{ end }}
 </div>
+
 
