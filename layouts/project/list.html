@@ -1,0 +1,9 @@
+<div class="project-card">
+  <div class="image-overlay">
+    <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }}">
+    <div class="overlay-text">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+    </div>
+  </div>
+</div>
