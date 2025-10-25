@@ -1,4 +1,8 @@
 {{ $item := .item }}
+
+{{/* Dynamic view adjusts to content type. */}}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
 {{ $link := $item.RelPermalink }}
 {{ $target := "" }}
 {{ if $item.Params.external_link }}
@@ -6,93 +10,66 @@
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
+{{/* Get summary. */}}
 {{ $summary := "" }}
 {{ if $item.Params.summary }}
   {{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Params.abstract }}
+  {{ $summary = $item.Params.abstract | markdownify | emojify }}
 {{ else if $item.Summary }}
   {{ $summary = $item.Summary }}
 {{ end }}
 
-{{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+<div class="card-simple view-card">
 
-<!-- ✅ 리스트형 프로젝트 카드 -->
-<div class="project-card list-card">
-  {{ with $resource }}
-    {{ $image := .Resize "400x" }}
-    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" loading="lazy" class="project-thumb">
-    </a>
-  {{ end }}
-
-  <div class="project-content">
-    <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify }}</a></h3>
-    {{ with $summary }}
-      <p>{{ . }}</p>
+  {{ if eq $item.Type "event" }}
+  <div class="article-metadata">
+    {{ if $item.Params.authors }}
+    <div>
+      {{ partial "page_metadata_authors" $item }}
+    </div>
+    {{ end }}
+    <span>
+      {{ partial "functions/get_event_dates" $item }}
+    </span>
+    {{ with $item.Params.location }}
+    <span class="middot-divider"></span>
+    <span>{{ . }}</span>
     {{ end }}
   </div>
+  {{ else }}
+    {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+  {{ end }}
+
+  {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+  {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
+  {{ with $resource }}
+    {{ $image := .Fill (printf "808x455 %s" $anchor) }}
+    {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+      <div class="img-hover-zoom">
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+            class="article-banner" alt="{{ $item.Title }}" loading="lazy">
+      </div>
+    </a>
+  {{end}}
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+  </div>
+
+  {{ with $summary }}
+  <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+    <div class="article-style">
+      <p>{{.}}</p>
+    </div>
+  </a>
+  {{ end }}
+
+  {{ if $has_attachments }}
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+
 </div>
-
-<style>
-.list-card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  overflow: hidden;
-  margin-bottom: 20px;
-  padding: 10px;
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-.list-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.list-card .project-thumb {
-  width: 220px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.project-content {
-  flex: 1;
-  padding: 10px 5px;
-}
-
-.project-content h3 {
-  margin: 0 0 8px;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.project-content h3 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-content p {
-  margin: 0;
-  color: #666;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-/* ✅ 모바일 반응형 */
-@media (max-width: 768px) {
-  .list-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .list-card .project-thumb {
-    width: 100%;
-    height: 180px;
-  }
-  .project-content {
-    padding: 10px;
-  }
-}
-</style>
