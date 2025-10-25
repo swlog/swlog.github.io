@@ -34,9 +34,14 @@ content:
       tag: AI
    
 design:
-  columns: '1'
   view: card
-  flip_alt_rows: false
-  background: {}
-  spacing: {padding: [0, 0, 0, 0]}
+  columns: 3                # ✅ 3열 카드
+  fill_image: true
+  aspect_ratio: 16x9
+  show_summary: true
+  show_date: false
+  show_read_more: false
+  card_style: shadow        # ✅ 그림자 효과
+  spacing:
+    padding: [10, 10, 10, 10]
 ---
