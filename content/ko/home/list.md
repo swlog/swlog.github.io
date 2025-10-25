@@ -4,7 +4,7 @@ headless: true
 active: true
 weight: 23
 title: "Projects — List"
-subtitle: "텍스트·요약 중심 리스트"
+subtitle: "프로젝트"
 content:
   filters: {}
 design:
