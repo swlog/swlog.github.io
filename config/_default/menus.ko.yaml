@@ -23,7 +23,7 @@ main:
     weight: 10
 
   - name: "소개"
-    url: "/about/"
+    url: "about"
     weight: 20
 
   - name: "프로젝트"
