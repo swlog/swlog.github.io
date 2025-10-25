@@ -14,6 +14,7 @@ sections:
       view: card
       columns: 4
       fill_image: true
+      aspect_ratio: 16x9     # ✅ 모든 카드 이미지를 같은 비율로 고정
       show_summary: true
       show_date: false
       show_read_more: false
