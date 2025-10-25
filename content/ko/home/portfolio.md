@@ -42,20 +42,17 @@ design:
   spacing: {padding: [0, 0, 0, 0]}
 --- -->
 
----
-widget: portfolio
-headless: true
-weight: 20
-title: "프로젝트"
-subtitle: "제가 만든 프로젝트 모음입니다."
+  filter_button:            # ✅ 필터 탭 3개만
+    - name: All
+      tag: '*'
+    - name: Python
+      tag: Python
+    - name: AI
+      tag: AI
 
-content:
-  page_type: projects     # ✅ 폴더명 일치
-  filter_button: []       # ✅ 필터 탭 숨기기 (원하면 유지 가능)
-  count: 4                # ✅ 홈에서 4개만 보여주기 (선택)
 design:
-  columns: '2'            # ✅ 가로 2개씩 카드 배치
-  view: card              # ✅ 이미지 카드형으로 보기
+  columns: '1'              # ✅ 가로 2개 카드
+  view: grid                # ✅ 카드형 (이미지 표시)
   flip_alt_rows: false
   spacing: {padding: [0, 0, 0, 0]}
 ---
