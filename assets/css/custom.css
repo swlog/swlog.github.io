@@ -1,44 +1,118 @@
-.overlay-container {
+/* =====================================================
+   SWLOG — Project Card Overlay (White Film Style)
+   ===================================================== */
+
+.swlog-card {
   position: relative;
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.overlay-container img {
-  width: 100%;
-  height: auto;
+.swlog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.swlog-card__link {
+  text-decoration: none;
+  color: inherit;
   display: block;
-  border-radius: 12px;
 }
 
-.overlay-layer {
+/* 🔹 이미지 영역 */
+.swlog-card__thumb {
+  position: relative;
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+/* ✅ 흰색 반투명 필름 오버레이 */
+.swlog-card__thumb::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45); /* 🔹 어두운 반투명 레이어 */
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5); /* 🤍 흰색 반투명 필름 */
+  backdrop-filter: blur(4px);            /* ✅ 살짝 흐림 효과 (유리질감) */
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 14px 14px 0 0;
 }
 
-.overlay-text {
+/* hover 시 오버레이 표시 */
+.swlog-card:hover .swlog-card__thumb::after {
+  opacity: 1;
+}
+
+/* 🔹 오버레이 텍스트 */
+.swlog-card__overlay-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.35s ease;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
-/* 🔹 프로젝트 카드 이미지 크기 통일 */
+.swlog-card:hover .swlog-card__overlay-text {
+  opacity: 1;
+}
+
+/* 🔹 본문 영역 */
+.swlog-card__body {
+  padding: 1rem;
+}
+
+.swlog-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #1b1b1b;
+}
+
+.swlog-card__desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.swlog-card__badge {
+  display: inline-block;
+  background: #3A86FF;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+}
+
+
+
+
+
+/* === 프로젝트 카드 이미지 크기 강제 통일 === */
+.article-card .card-image,
+.card .card-image,
 .article-card img,
 .card img {
   width: 100%;
-  height: 200px;        /* ✅ 원하는 높이 (180~240px 추천) */
-  object-fit: cover;    /* ✅ 비율 유지하면서 꽉 채움 */
-  border-radius: 8px;   /* ✅ 살짝 둥근 모서리 */
+  aspect-ratio: 16 / 9;     /* ✅ 비율 강제 (정사각형이면 1/1로 바꾸세요) */
+  height: auto;
+  object-fit: cover;        /* ✅ 이미지가 찌그러지지 않게 채움 */
+  border-radius: 10px;
+  overflow: hidden;
 }
