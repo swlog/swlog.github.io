@@ -11,7 +11,7 @@ en:
     description: "Seowon Choi's personal portfolio"
 
 ko:
-  languageCode: ko
+  languageCode: ko-kr
   contentDir: content/ko
   title: 최서원의 포트폴리오
   params:
