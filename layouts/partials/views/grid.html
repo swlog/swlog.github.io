@@ -1,89 +1,71 @@
+{{/* grid.html — custom view for grid layout */}}
+{{ $items := .Items }}
+
 <style>
-  .card-grid {
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* ✅ 가로 2개 */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
-    padding: 10px;
+    padding: 20px 10px;
   }
 
-  .card-simple.view-card {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border-radius: 12px;
+  .grid-card {
     background: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
   }
 
-  .card-simple.view-card:hover {
+  .grid-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   }
 
-  .card-simple.view-card img.article-banner {
+  .grid-card img {
     width: 100%;
-    height: auto;
-    border-radius: 12px 12px 0 0;
+    height: 200px;
+    object-fit: cover;
   }
 
-  .section-subheading.article-title {
+  .grid-card-content {
+    padding: 16px 20px;
+  }
+
+  .grid-card-content h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
     font-weight: 600;
-    font-size: 1rem;
   }
 
-  @media (max-width: 900px) {
-    .card-grid { grid-template-columns: 1fr; } /* 모바일 1열 */
+  .grid-card-content p {
+    font-size: 0.95rem;
+    color: #555;
   }
 </style>
 
-<div class="card-grid">
-  {{ range .Items }}  <!-- ✅ 반복문은 여기 -->
-    {{ $item := . }}
-    <div class="card-simple view-card">
-      {{ $has_attachments := partial "functions/has_attachments" $item }}
-      {{ $link := $item.RelPermalink }}
-      {{ $target := "" }}
-      {{ if $item.Params.external_link }}
-        {{ $link = $item.Params.external_link }}
-        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-      {{ end }}
+<div class="grid-container">
+  {{ range $items }}
+    {{ $link := .RelPermalink }}
+    {{ $image := partial "blox-core/functions/get_featured_image.html" . }}
+    {{ $anchor := .Params.image.focal_point | default "Smart" }}
+    {{ if $image }}
+      {{ $processed := $image.Fill (printf "800x600 %s" $anchor) }}
+      {{ if ne $processed.MediaType.SubType "gif" }}{{ $processed = $processed.Process "webp" }}{{ end }}
+    {{ end }}
 
-      {{ $summary := "" }}
-      {{ if $item.Params.summary }}
-        {{ $summary = $item.Params.summary | markdownify | emojify }}
-      {{ else if $item.Params.abstract }}
-        {{ $summary = $item.Params.abstract | markdownify | emojify }}
-      {{ else if $item.Summary }}
-        {{ $summary = $item.Summary }}
-      {{ end }}
-
-      {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
-      {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
-      {{ with $resource }}
-        {{ $image := .Fill (printf "808x455 %s" $anchor) }}
-        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-        <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-          <div class="img-hover-zoom">
-            <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ $item.Title }}" loading="lazy">
-          </div>
-        </a>
-      {{ end }}
-
-      <div class="section-subheading article-title mb-1 mt-3">
-        <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-      </div>
-
-      {{ with $summary }}
-      <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
-        <div class="article-style">
-          <p>{{ . }}</p>
-        </div>
+    <div class="grid-card">
+      <a href="{{ $link }}">
+        {{ with $processed }}
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+        {{ end }}
       </a>
-      {{ end }}
-
-      {{ if $has_attachments }}
-      <div class="btn-links">
-        {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+      <div class="grid-card-content">
+        <h3><a href="{{ $link }}">{{ .Title }}</a></h3>
+        {{ with .Summary }}
+          <p>{{ . }}</p>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
   {{ end }}
 </div>
