@@ -2,7 +2,9 @@
 title: 가위바위보 게임
 summary: Python으로 구현한 간단한 CLI 기반 가위바위보 게임
 date: 2025-04-01
-tags: ["Python"]
+type: projectS
+tags:
+  - PYTHON
 image:
   filename: "rps.jpg"          # ✅ 파일명과 동일해야 함
   focal_point: "center"        # ✅ 중앙 정렬

@@ -2,7 +2,9 @@
 title: 영화 리뷰 감성 분석
 summary: 네이버 영화 리뷰 데이터를 활용한 텍스트 전처리 및 감성 분석 입문 프로젝트
 date: 2025-04-15
-tags: ["Python"]
+type: projectS
+tags:
+  - PYTHON
 image:
   filename: "movie.jpg"
   focal_point: "center"
