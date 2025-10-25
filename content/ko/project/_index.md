@@ -9,12 +9,12 @@ sections:
   - block: collection
     content:
       title: ""
-      text: "진행 중이거나 완료된 프로젝트들을 모아둔 포트폴리오 섹션입니다 💡"
+      text: " 프로젝트 💡"
       filters:
         folders:
           - project          # ✅ content/project/ 폴더 내의 카드 파일들 자동 불러오기
     design:
-      view: card_2x2       # ✅ grid
+      view: list       # ✅ grid
       columns: 4             # ✅ 한 줄에 4개 카드
       gap: 20                # ✅ 카드 간격(px)
       fill_image: true       # ✅ 이미지를 카드 배경으로 채움
