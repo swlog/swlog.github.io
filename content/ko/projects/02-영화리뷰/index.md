@@ -36,6 +36,7 @@ image:
 ---
 
 ## <i class="fab fa-dropbox"></i> 코드 다운로드
-</> [nsmc_simple.py 다운로드](/uploads/nsmc_simple.py)
+</> [nsmc_simple.zip 다운로드](/uploads/nsmc_simple.zip)
+## <i class="fab fa-dropbox"></i> 코드 다운로드
 
 ---
