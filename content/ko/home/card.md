@@ -10,7 +10,4 @@ design:
   view: card             # 1번째 뷰
   columns: 3
   gap: 16
-design:
-  spacing:
-    padding: [0, 0, 0, 0]
 ---
