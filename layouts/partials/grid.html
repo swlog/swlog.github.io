@@ -6,24 +6,84 @@
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
-<li style="margin-bottom:1.2em; line-height:1.6;">
-  {{ with $item.Params.authors }}
-    {{ delimit . ", " }}.
-  {{ end }}
-  <b>
-    {{ if $link }}
-      <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-    {{ else }}
-      {{ $item.Title }}
+<style>
+  /* ✨ Compact List 스타일 */
+  .compact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .compact-item {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding: 1.1em 1.3em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.25s ease;
+  }
+
+  .compact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    border-color: #ffa857;
+  }
+
+  .compact-item b a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .compact-item b a:hover {
+    color: #ff7c00;
+  }
+
+  .compact-item i {
+    color: #666;
+  }
+
+  .compact-item small {
+    color: #888;
+  }
+
+  .compact-item .pdf-link {
+    color: #ff7c00;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.4em;
+  }
+
+  .compact-item .pdf-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<ul class="compact-list">
+  <li class="compact-item">
+    {{ with $item.Params.authors }}
+      <small>{{ delimit . ", " }}</small> ·
     {{ end }}
-  </b>.
-  {{ with $item.Params.publication }}
-    <i>{{ . }}</i>,
-  {{ end }}
-  {{ with $item.Params.date }}
-    {{ (time .).Year }}.
-  {{ end }}
-  {{ if $item.Params.url_pdf }}
-    <a href="{{ $item.Params.url_pdf }}" target="_blank">[PDF]</a>
-  {{ end }}
-</li>
+
+    <b>
+      {{ if $link }}
+        <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+      {{ else }}
+        {{ $item.Title }}
+      {{ end }}
+    </b>
+
+    {{ with $item.Params.publication }}
+      <br><i>{{ . }}</i>
+    {{ end }}
+
+    {{ with $item.Params.date }}
+      <small> · {{ (time .).Year }}</small>
+    {{ end }}
+
+    {{ if $item.Params.url_pdf }}
+      <a href="{{ $item.Params.url_pdf }}" target="_blank" class="pdf-link">[PDF]</a>
+    {{ end }}
+  </li>
+</ul>

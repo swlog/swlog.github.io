@@ -3,8 +3,8 @@ widget: portfolio        # 일부 테마는 projects
 headless: true
 active: true
 weight: 21
-title: "Projects — Masonry"
-subtitle: "높이 가변 섬네일 그리드"
+title: "프로젝트"
+subtitle: ""
 content:
   filters: {}
 design:
