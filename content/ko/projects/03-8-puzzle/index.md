@@ -1,15 +1,14 @@
 ---
-title: "8퍼즐 프로그램"
-type: project
-summary: "파이썬으로 구현한 상태공간 탐색 기반 8퍼즐 프로그램"
-date: 2024-04-05
-weight: 3
-featured: true
+title: 8퍼즐 프로그램
+summary: 파이썬으로 구현한 상태공간 탐색 기반 8퍼즐 프로그램
+date: 2025-05-10
+tags: ["AI", "탐색"]
 image:
-  filename: "uploads/eightpuzzle.jpg"
-  caption: "퍼즐"
-  focal_point: "Center"
+  filename: "puzzle.jpg"
+  focal_point: "center"
+  preview_only: false
 ---
+
 <p align="center">
   <img src="/uploads/puzzle.jpg" alt="8퍼즐 문제 시각화 이미지" width="100%">
 </p>

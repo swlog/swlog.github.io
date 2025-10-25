@@ -1,15 +1,14 @@
 ---
-title: "오목 게임 AI"
-type: project
-summary: "파이썬 기반의 Alpha-Beta 탐색과 휴리스틱 평가 함수를 적용한 오목 인공지능"
-date: 2024-04-15
-weight: 4
-featured: true
+title: 오목 게임 AI
+summary: 파이썬 기반의 Alpha-Beta 탐색과 휴리스틱 평가 함수를 적용한 오목 인공지능
+date: 2025-05-20
+tags: ["AI", "게임"]
 image:
-  filename: "uploads/omok.jpeg"
-  caption: "AI 오목 게임"
-  focal_point: "Center"
+  filename: "omok.jpg"
+  focal_point: "center"
+  preview_only: false
 ---
+
 
 <p align="center">
   <img src="/uploads/omok.jpeg" alt="오목" width="80%">

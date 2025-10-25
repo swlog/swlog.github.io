@@ -1,15 +1,14 @@
 ---
-title: "가위바위보 게임"
-type: project
-summary: "Python으로 구현한 간단한 CLI 기반 가위바위보 게임"
-date: 2024-03-10
-weight: 1
-featured: true         # ✅ 대표 이미지 표시용 (구버전 테마 대응)
+title: 가위바위보 게임
+summary: Python으로 구현한 간단한 CLI 기반 가위바위보 게임
+date: 2025-04-01
+tags: ["게임", "Python"]
 image:
-  filename: "upload/rps.jpg"
-  caption: "터미널 기반 가위바위보 게임"
-  focal_point: "Center"
+  filename: "rps.jpg"          # ✅ 파일명과 동일해야 함
+  focal_point: "center"        # ✅ 중앙 정렬
+  preview_only: false          # ✅ 카드에 표시됨
 ---
+
 
 <p align="center">
   <img src="/uploads/rps.jpg" alt="가위바위보 게임 실행 화면" width="80%">

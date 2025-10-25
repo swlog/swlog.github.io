@@ -1,15 +1,14 @@
 ---
-title: "영화 리뷰 감성 분석"
-type: project
-summary: "네이버 영화 리뷰 데이터를 활용한 텍스트 전처리 및 감성 분석 입문 프로젝트"
-date: 2024-03-25
-weight: 2
-featured: true
+title: 영화 리뷰 감성 분석
+summary: 네이버 영화 리뷰 데이터를 활용한 텍스트 전처리 및 감성 분석 입문 프로젝트
+date: 2025-04-15
+tags: ["NLP", "Python"]
 image:
-  filename: "uploads/movie_review.jpg"
-  caption: "네이버 영화 리뷰 데이터 감성 분석 과정"
-  focal_point: "Center"
+  filename: "movie.jpg"
+  focal_point: "center"
+  preview_only: false
 ---
+
 <p align="center">
   <img src="/uploads/movie_review.jpg" alt="영화 리뷰 감성 분석 이미지" width="80%">
 </p>
@@ -37,6 +36,5 @@ image:
 
 ## <i class="fab fa-dropbox"></i> 코드 다운로드
 </> [nsmc_simple.zip 다운로드](/uploads/nsmc_simple.zip)
-
 
 ---
