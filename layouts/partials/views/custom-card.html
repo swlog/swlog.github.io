@@ -1,0 +1,40 @@
+{{/* layouts/partials/custom-cards.html
+   Expects a dict: "Pages" -> pages collection, "View" -> "card" | "grid" | "list"
+*/}}
+{{ $pages := .Pages }}
+{{ $view := .View | default "grid" }}
+
+<div class="custom-cards {{ $view }}">
+  {{ range $pages }}
+    {{ $page := . }}
+    {{/* choose image field (image, featured_image, thumbnail) */}}
+    {{ $img := "" }}
+    {{ with $page.Params.image }}{{ $img = . }}{{ else }}
+      {{ with $page.Params.featured_image }}{{ $img = . }}{{ else }}
+        {{ with $page.Params.thumbnail }}{{ $img = . }}{{ end }}
+      {{ end }}
+    {{ end }}
+
+    <article class="card-item">
+      <a class="card-link" href="{{ $page.RelPermalink }}">
+        {{ if $img }}
+          <div class="card-media">
+            <img src="{{ $img | relURL }}" alt="{{ $page.Title }}">
+          </div>
+        {{ end }}
+        <div class="card-body">
+          <h3 class="card-title">{{ $page.Title }}</h3>
+          <p class="card-meta">
+            {{ $page.Date.Format "2006-01-02" }}
+            {{ with $page.Params.tags }} · {{ delimit . ", " }}{{ end }}
+          </p>
+          {{ with $page.Summary }}
+            <p class="card-excerpt">{{ . }}</p>
+          {{ else if $page.Params.excerpt }}
+            <p class="card-excerpt">{{ $page.Params.excerpt }}</p>
+          {{ end }}
+        </div>
+      </a>
+    </article>
+  {{ end }}
+</div>

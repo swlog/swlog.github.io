@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="page-list">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{/* 기본 뷰: grid. front matter에서 cards_view: "card"|"grid"|"list"로 변경 가능 */}}
+  {{ $view := .Params.cards_view | default "grid" }}
+  {{ partial "custom-cards.html" (dict "Pages" .Pages "View" $view) }}
+</main>
+{{ end }}
