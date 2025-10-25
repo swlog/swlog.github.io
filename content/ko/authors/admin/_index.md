@@ -67,10 +67,10 @@ social:
 ---
 
 👋 안녕하세요! 저는 최서원입니다. 전북대학교 컴퓨터공학부에서 공부하며 AI, 클라우드, 오픈소스 프로젝트를 연구하고 있습니다.  
-관심 분야는 인공지능 응용, 분산 시스템, DevOps 자동화이며  
+관심 분야는 인공지능 응용, 클라우드이며, DevOps 자동화이며  
 기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/자기소개서_ko.pdf" "newtab" >}}자기소개서(PDF) 다운로드{{< /staticref >}}
 
 <div style="margin-top:20px; padding-top:10px;">
 
