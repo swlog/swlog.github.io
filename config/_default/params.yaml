@@ -44,7 +44,7 @@ header:
     show_search: true
     highlight_active_link: true
     logo:
-      image: 'assets/media/swlog_logo.jpg'     # 로고 파일 경로
+      image: 'assets/media/'     # 로고 파일 경로
       alt_text: '최서원의 로고'
     show_dropdown: true  
 
