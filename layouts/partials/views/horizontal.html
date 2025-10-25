@@ -1,0 +1,50 @@
+{{ range .Pages }}
+<div class="sw-horizontal-card">
+  <a href="{{ .RelPermalink }}" class="card-link">
+    <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="card-img">
+    <div class="card-content">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+    </div>
+  </a>
+</div>
+{{ end }}
+
+<style>
+.sw-horizontal-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 1.2em;
+  transition: transform 0.25s ease;
+}
+.sw-horizontal-card:hover {
+  transform: translateY(-3px);
+}
+.sw-horizontal-card .card-link {
+  display: flex;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+.sw-horizontal-card .card-img {
+  width: 40%;
+  height: 180px;
+  object-fit: cover;
+}
+.sw-horizontal-card .card-content {
+  padding: 1.2em 1.6em;
+  width: 60%;
+}
+.sw-horizontal-card h3 {
+  margin: 0 0 .4em 0;
+  font-size: 1.3rem;
+}
+.sw-horizontal-card p {
+  margin: 0;
+  color: #555;
+}
+</style>
