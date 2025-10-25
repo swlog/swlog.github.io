@@ -1,105 +1,65 @@
 /* =====================================================
-   SWLOG — Project Card Overlay (White Film Style)
+   SWLOG — Card Hover Lift & Brighten Effect
    ===================================================== */
 
-.swlog-card {
-  position: relative;
-  overflow: hidden;
+/* 🔹 프로젝트 카드 전체 */
+.article-card,
+.project-card,
+.card {
   border-radius: 14px;
-  background: #fff;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.swlog-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.swlog-card__link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-/* 🔹 이미지 영역 */
-.swlog-card__thumb {
-  position: relative;
-  height: 230px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 14px 14px 0 0;
   overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* ✅ 흰색 반투명 필름 오버레이 */
-.swlog-card__thumb::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* 🔹 마우스 올렸을 때 카드가 살짝 올라감 + 그림자 진해짐 */
+.article-card:hover,
+.project-card:hover,
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* 🔹 카드 이미지 (hover 시 밝게) */
+.article-card img,
+.project-card img,
+.card img {
   width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* 🤍 흰색 반투명 필름 */
-  backdrop-filter: blur(4px);            /* ✅ 살짝 흐림 효과 (유리질감) */
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  border-radius: 14px 14px 0 0;
+  height: auto;
+  object-fit: cover;
+  transition: filter 0.4s ease, transform 0.4s ease;
 }
 
-/* hover 시 오버레이 표시 */
-.swlog-card:hover .swlog-card__thumb::after {
-  opacity: 1;
+/* hover 시 이미지 살짝 확대 + 밝게 */
+.article-card:hover img,
+.project-card:hover img,
+.card:hover img {
+  filter: brightness(1.18);     /* ✅ 18% 더 밝게 */
+  transform: scale(1.05);       /* ✅ 약간 확대 */
 }
 
-/* 🔹 오버레이 텍스트 */
-.swlog-card__overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #222;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-align: center;
-  opacity: 0;
-  z-index: 2;
-  transition: opacity 0.35s ease;
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+/* 🔹 카드 텍스트 영역 */
+.article-card .card-body,
+.project-card .card-body,
+.card .card-body {
+  padding: 1.2rem;
+  transition: color 0.3s ease;
 }
 
-.swlog-card:hover .swlog-card__overlay-text {
-  opacity: 1;
+/* 제목 강조 (hover 시 살짝 파랗게) */
+.article-card:hover .card-title,
+.project-card:hover .card-title,
+.card:hover .card-title {
+  color: #1e63ff;
 }
 
-/* 🔹 본문 영역 */
-.swlog-card__body {
-  padding: 1rem;
+/* 🔹 카드 전체에 부드러운 커서 표시 */
+.article-card,
+.project-card,
+.card {
+  cursor: pointer;
 }
-
-.swlog-card__title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-  color: #1b1b1b;
-}
-
-.swlog-card__desc {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
-}
-
-.swlog-card__badge {
-  display: inline-block;
-  background: #3A86FF;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  margin-top: 0.4rem;
-}
-
 
 
 
