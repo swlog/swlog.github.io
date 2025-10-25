@@ -1,0 +1,28 @@
+{{/* Grid View for Projects */}}
+<div class="grid-container">
+  {{ range .items }}
+    {{ $item := . }}
+    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+    {{ $image := "" }}
+    {{ with $resource }}
+      {{ $image = .Fill "800x450 Smart" }}
+    {{ end }}
+
+    <div class="grid-card">
+      <a href="{{ $item.RelPermalink }}" class="grid-link">
+        {{ with $image }}
+        <div class="grid-image">
+          <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}">
+        </div>
+        {{ end }}
+
+        <div class="grid-overlay">
+          <h3 class="grid-title">{{ $item.Title }}</h3>
+          {{ if $item.Params.summary }}
+          <p class="grid-summary">{{ $item.Params.summary | markdownify }}</p>
+          {{ end }}
+        </div>
+      </a>
+    </div>
+  {{ end }}
+</div>

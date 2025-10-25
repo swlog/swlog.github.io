@@ -1,7 +1,7 @@
 ---
 widget: collection
 headless: true
-active: true
+active: false
 title: "프로젝트"
 subtitle: ""
 content:
