@@ -12,10 +12,6 @@ image:
 ---
 
 
-<p align="center">
-  <img src="/uploads/rps.jpg" alt="가위바위보 게임 실행 화면" width="80%">
-</p>
-
 ---
 
 ## <i class="fab fa-python"></i> 프로젝트 개요
