@@ -17,12 +17,6 @@ image:
 
 ---
 
-<p align="center">
-  <img src="/uploads/omok.jpeg" alt="오목 게임 이미지" width="80%">
-</p>
-
----
-
 ## <i class="fab fa-python"></i> 프로젝트 개요
 
 이 프로젝트는 **AI 탐색 알고리즘을 적용한 오목 게임 인공지능**으로,  
