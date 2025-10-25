@@ -11,11 +11,11 @@ sections:
         folders:
           - project
     design:
-      view: card
-      columns: 4
+      view: list         # ✅ list 뷰 사용
+      columns: 1         
       fill_image: true
-      aspect_ratio: 16x9     # ✅ 모든 카드 이미지를 같은 비율로 고정
+      aspect_ratio: 16x9
       show_summary: true
       show_date: false
-      show_read_more: false
+      show_read_more: true
 ---
