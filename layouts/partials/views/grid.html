@@ -8,7 +8,7 @@
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
-{{/* Get summary. */}}
+{{/* Get summary */}}
 {{ $summary := "" }}
 {{ if $item.Params.summary }}
   {{ $summary = $item.Params.summary | markdownify | emojify }}
@@ -20,6 +20,28 @@
 
 {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
+<style>
+  /* 🟧 카드 hover 효과 */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .card img {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.08);
+  }
+</style>
+
 <div class="card">
   {{ with $resource }}
   {{ $image := .Resize "550x" }}
@@ -29,11 +51,11 @@
          alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="margin-top: 15px;">
   </a>
   {{ end }}
+
   <div class="card-text">
     <div class="section-subheading article-title mb-1 mt-3">
         <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a></h4>
     </div>
-    
 
     {{ if $item.Params.authors }}
     <div class="article-metadata">
