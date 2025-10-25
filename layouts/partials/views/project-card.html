@@ -1,22 +1,37 @@
-{{/* layouts/partials/custom/project-card.html */}}
-<div class="project-card">
-  <div class="card">
-    {{ with .Params.image }}
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="card-img">
-    {{ end }}
+<section id="project" class="home-section">
+  <div class="container">
+    {{ with .Title }}<h2 class="section-title text-center mb-4">{{ . }}</h2>{{ end }}
+    {{ with .Params.subtitle }}<p class="section-subtitle text-center mb-5">{{ . }}</p>{{ end }}
 
-    <div class="card-body">
-      <h3 class="card-title">{{ .Title }}</h3>
+    <div class="project-grid">
+      {{/* content/ko/project/ 아래 모든 페이지 불러오기 */}}
+      {{ range (where site.RegularPages "Section" "project") }}
+      <div class="card-simple project-card view-card">
+        {{ with .Params.image }}
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        {{ end }}
 
-      {{ with .Summary }}
-        <p class="card-summary">{{ . }}</p>
+        <div class="card-body">
+          <h5 class="card-title">{{ .Title }}</h5>
+          {{ with .Params.summary }}
+            <p class="card-text">{{ . }}</p>
+          {{ else }}
+            <p class="card-text">{{ .Plain | truncate 100 }}</p>
+          {{ end }}
+
+          <a href="{{ .RelPermalink }}" class="btn mt-2">자세히 보기</a>
+        </div>
+      </div>
       {{ end }}
-
-      {{ with .Date }}
-        <p class="card-date">{{ .Format "2006-01-02" }}</p>
-      {{ end }}
-
-      <a href="{{ .RelPermalink }}" class="card-btn">자세히 보기</a>
     </div>
   </div>
-</div>
+</section>
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+</style>
