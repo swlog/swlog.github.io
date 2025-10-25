@@ -12,6 +12,8 @@ appearance:
   font_size: L
   custom_css:
     - css/custom.css
+  custom_head: |
+  <link rel="stylesheet" href="/css/custom.css">
 
 # SEO
 
