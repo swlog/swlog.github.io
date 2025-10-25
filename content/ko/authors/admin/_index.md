@@ -74,7 +74,7 @@ social:
 
 <hr style="margin:30px 0;">
 
-<div class="row align-items-start" style="background-color:#d8e0e8; padding:30px; border-radius:10px;">
+<div class="row align-items-start" style="padding:20px 0;">
   <!-- 관심분야 -->
   <div class="col-md-6">
     <h3 style="font-weight:700;">관심분야</h3>
