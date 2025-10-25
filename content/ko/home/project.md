@@ -12,3 +12,4 @@ view: project-card
     {{ partial "custom/project-card.html" . }}
   {{ end }}
 </div>
+
