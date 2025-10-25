@@ -8,7 +8,7 @@ subtitle: ""
 content:
   filters: {}
 design:
-  view: grid         # ✅ 1번째 뷰
+  view: custom-compact        # ✅ 1번째 뷰
   columns: 3
   gap: 16
 ---
