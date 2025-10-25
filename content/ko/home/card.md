@@ -1,22 +1,14 @@
 ---
-widget: blank
+widget: portfolio
 headless: true
 active: true
-title: "프로젝트 모음"
-weight: 40
+weight: 22
+title: "Projects — Grid"
+subtitle: "고정비 카드형 그리드"
+content:
+  filters: {}
+design:
+  view: card             # ✅ 2번째 뷰
+  columns: 3
+  gap: 16
 ---
-
-<div class="project-grid">
-  {{ range (where site.RegularPages "Type" "project") }}
-    {{ partial "views/project-card.html" . }}
-  {{ end }}
-</div>
-
-<style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-</style>

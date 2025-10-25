@@ -1,72 +1,92 @@
-<div class="sw-card">
-  <a href="{{ .RelPermalink }}" class="sw-card__link">
-    <div class="sw-card__thumb">
-      <img src="{{ .Params.image.filename | relURL }}" alt="{{ .Title }}">
-    </div>
-    <div class="sw-card__body">
-      <h3 class="sw-card__title">{{ .Title }}</h3>
-      <p class="sw-card__desc">{{ .Params.summary }}</p>
-    </div>
-  </a>
+<div class="project-section">
+  <div class="project-grid">
+    {{ range (where site.RegularPages "Type" "project") }}
+      {{ $item := . }}
+      {{ $link := $item.RelPermalink }}
+      {{ $target := "" }}
+      {{ if $item.Params.external_link }}
+        {{ $link = $item.Params.external_link }}
+        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
+
+      {{/* Get summary */}}
+      {{ $summary := "" }}
+      {{ if $item.Params.summary }}
+        {{ $summary = $item.Params.summary | markdownify | emojify }}
+      {{ else if $item.Params.abstract }}
+        {{ $summary = $item.Params.abstract | markdownify | emojify }}
+      {{ else if $item.Summary }}
+        {{ $summary = $item.Summary }}
+      {{ end }}
+
+      <div class="card-simple view-card">
+        {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+        {{ $anchor := $item.Params.image.focal_point | default "center" }}
+        {{ with $resource }}
+          {{ $image := .Fill (printf "808x455 %s" $anchor) }}
+          {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+            <div class="img-hover-zoom">
+              <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="article-banner" loading="lazy">
+            </div>
+          </a>
+        {{ end }}
+
+        <div class="section-subheading article-title mb-1 mt-3">
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+        </div>
+
+        {{ with $summary }}
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">
+          <div class="article-style">
+            <p>{{ . }}</p>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
 </div>
 
 <style>
-/* 카드 전체 컨테이너 */
-.sw-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.project-section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card-simple.view-card {
   background: #fff;
-}
-
-/* 이미지 영역 */
-.sw-card__thumb {
-  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.25s ease-in-out;
   overflow: hidden;
 }
 
-.sw-card__thumb img {
+.card-simple.view-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-simple.view-card img.article-banner {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-/* 카드 내용 */
-.sw-card__body {
-  padding: 1rem;
-}
-
-.sw-card__title {
-  font-size: 1.1rem;
-  font-weight: 700;
+.card-simple.view-card .article-title a {
+  font-weight: 600;
   color: #222;
-  margin-bottom: 0.4rem;
-}
-
-.sw-card__desc {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.4;
-}
-
-/* Hover 시 효과 */
-.sw-card:hover img {
-  transform: scale(1.1);
-  opacity: 0.75;
-}
-
-.sw-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-/* 카드 링크 전체 클릭 가능 */
-.sw-card__link {
   text-decoration: none;
-  color: inherit;
-  display: block;
+}
+
+.card-simple.view-card .article-style p {
+  font-size: 0.95rem;
+  color: #666;
 }
 </style>
