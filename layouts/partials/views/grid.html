@@ -1,7 +1,8 @@
 <style>
+  /* ✅ 2행 2열 고정 그리드 */
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* ✅ 가로 2개 */
+    grid-template-columns: repeat(2, 1fr); /* 가로 2개 */
     gap: 24px;
     padding: 10px;
   }
@@ -35,8 +36,9 @@
 </style>
 
 <div class="card-grid">
-  {{ range .Items }}  <!-- ✅ 반복문은 여기 -->
+  {{ range .Items }} <!-- ✅ 여러 카드 반복 시작 -->
     {{ $item := . }}
+
     <div class="card-simple view-card">
       {{ $has_attachments := partial "functions/has_attachments" $item }}
       {{ $link := $item.RelPermalink }}
@@ -85,5 +87,5 @@
       </div>
       {{ end }}
     </div>
-  {{ end }}
+  {{ end }} <!-- ✅ 반복 종료 -->
 </div>
