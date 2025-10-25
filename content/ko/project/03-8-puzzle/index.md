@@ -2,7 +2,7 @@
 title: 8퍼즐 프로그램
 summary: 파이썬으로 구현한 상태공간 탐색 기반 8퍼즐 프로그램
 date: 2025-05-10
-type: projectS
+type: project
 tags:
   - AI
 image:
