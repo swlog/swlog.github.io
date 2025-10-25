@@ -14,8 +14,8 @@ sections:
         folders:
           - project          # ✅ content/project/ 폴더 내의 카드 파일들 자동 불러오기
     design:
-      view: masonry          # ✅ Masonry 뷰 (Pinterest 스타일)
-      columns: 3             # ✅ 한 줄에 3개 카드
+      view: card_2x2       # ✅ grid
+      columns: 4             # ✅ 한 줄에 4개 카드
       gap: 20                # ✅ 카드 간격(px)
       fill_image: true       # ✅ 이미지를 카드 배경으로 채움
       aspect_ratio: 16x9     # ✅ 비율 고정 (세로 불균형 방지)
