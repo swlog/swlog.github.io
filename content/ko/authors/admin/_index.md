@@ -72,28 +72,27 @@ social:
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
 
-<hr style="margin:30px 0;">
+<div style="margin-top:20px; padding-top:10px;">
+  <div class="row align-items-start" style="padding:15px 0;">
+    <!-- 관심분야 -->
+    <div class="col-md-6">
+      <h3 style="font-weight:700;">관심분야</h3>
+      <p style="text-align:justify; font-size:1rem; margin-top:10px;">
+        인공지능, 클라우드, 네트워크 관련 기술에 관심이 있으며
+        이를 활용한 효율적인 시스템 설계와 유지보수 자동화를 목표로 하고 있습니다.
+      </p>
+    </div>
 
-<div class="row align-items-start" style="padding:20px 0;">
-  <!-- 관심분야 -->
-  <div class="col-md-6">
-    <h3 style="font-weight:700;">관심분야</h3>
-    <ul style="font-size:1rem; margin-top:10px;">
-      <li>인공지능</li>
-      <li>클라우드</li>
-      <li>네트워크</li> 
-    </ul>
-  </div>
-
-  <!-- 학위 -->
-  <div class="col-md-6">
-    <h3 style="font-weight:700;">학위</h3>
-    <ul style="list-style:none; padding-left:0; margin-top:10px;">
-      <li style="margin-bottom:15px;">
-        <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
-        <strong>컴퓨터공학부</strong><br>
-        <span style="color:#555;">전북대학교 (JBNU)</span>
-      </li>
-    </ul>
+    <!-- 학위 -->
+    <div class="col-md-6">
+      <h3 style="font-weight:700;">학위</h3>
+      <ul style="list-style:none; padding-left:0; margin-top:10px;">
+        <li style="margin-bottom:15px; text-align:justify;">
+          <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
+          <strong>컴퓨터공학부</strong><br>
+          <span style="color:#555;">전북대학교 (JBNU)</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
