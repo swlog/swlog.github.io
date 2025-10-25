@@ -6,7 +6,7 @@ type: project
 tags:
   - AI
 image:
-  filename: "omok.jpg"
+  filename: "omok.jpeg"
   focal_point: "center"
   preview_only: false
 ---
