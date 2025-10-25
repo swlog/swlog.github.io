@@ -71,3 +71,29 @@ social:
 기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+
+<hr style="margin:30px 0;">
+
+<div class="row align-items-start" style="background-color:#d8e0e8; padding:30px; border-radius:10px;">
+  <!-- 관심분야 -->
+  <div class="col-md-6">
+    <h3 style="font-weight:700;">관심분야</h3>
+    <ul style="font-size:1rem; margin-top:10px;">
+      <li>인공지능</li>
+      <li>클라우드</li>
+      <li>네트워크</li> 
+    </ul>
+  </div>
+
+  <!-- 학위 -->
+  <div class="col-md-6">
+    <h3 style="font-weight:700;">학위</h3>
+    <ul style="list-style:none; padding-left:0; margin-top:10px;">
+      <li style="margin-bottom:15px;">
+        <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
+        <strong>컴퓨터공학부</strong><br>
+        <span style="color:#555;">전북대학교 (JBNU)</span>
+      </li>
+    </ul>
+  </div>
+</div>
