@@ -71,8 +71,10 @@ social:
 기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
----
+
 <div style="margin-top:20px; padding-top:10px;">
+
+  <hr style="border:0; border-top:2px solid #ccc; width:100%; margin-bottom:20px;">
 
   <h3 style="font-weight:700;">관심분야</h3>
   <p style="text-align:justify; font-size:1rem; margin-top:10px;">
