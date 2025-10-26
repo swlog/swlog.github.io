@@ -14,75 +14,27 @@
 #   params:
 #     description: "Seowon Choi's personal portfolio and AI projects."
 #     author: admin
-  main:
-  - name: "Home"
-    url: "/en/"
-    weight: 10
-
-  # About menu (parent)
-  - name: "About"
-    url: "/en/about/"
-    weight: 20
-
-  # About submenu items
-  - parent: "About"
-    name: "Introduction"
-    url: "/en/about/about"
-    weight: 21
-
-  - parent: "About"
-    name: "Tech Stack"
-    url: "/en/about/tech-stack"
-    weight: 22
-
-  # Projects menu (parent)
-  - name: "Projects"
-    url: "/en/project/"
-    weight: 30
-
-  # Project submenu items (anchor links)
-  - parent: "Projects"
-    name: "Rock-Paper-Scissors Game"
-    url: "/en/project/#rps-game"
-    weight: 31
-
-  - parent: "Projects"
-    name: "Movie Review Sentiment Analysis"
-    url: "/en/project/#movie-review"
-    weight: 32
-
-  - parent: "Projects"
-    name: "8-Puzzle Program"
-    url: "/en/project/#eight-puzzle"
-    weight: 33
-
-  - parent: "Projects"
-    name: "Omok Game AI"
-    url: "/en/project/#omok-ai"
-    weight: 34
-
-  # Activities menu (parent)
-  - name: "Activities"
-    url: "/en/activities/"
-    weight: 40
-
-  # Activities submenu items
-  - parent: "Activities"
-    name: "2025 Open Source Hackathon Director"
-    url: "/en/activities/oncampus/hackerthon/"
-    weight: 41
-
-  - parent: "Activities"
-    name: "WHO Club Activities"
-    url: "/en/activities/oncampus/club/"
-    weight: 42
-
-  - parent: "Activities"
-    name: "KB Digital Supporters"
-    url: "/en/activities/offcampus/kb-digital-supporters/"
-    weight: 43
-
-  # Contact menu
-  - name: "Contact"
-    url: "/en/contact/"
-    weight: 50
+  menu:
+    main:
+      - name: "Home"
+        url: "/"
+        weight: 10
+      - name: "Profile"
+        url: "/en/about/"
+        weight: 20
+      - name: "Project"
+        url: "/en/project/"
+        weight: 30
+      - name: "Activity"
+        url: "/en/activites/"
+        children:
+          - name: "on-campus"
+            url: "/en/activities/oncampus/"
+            weight: 1
+          - name: "off-campus"
+            url: "/en/activities/offcampus/"
+            weight: 2
+        weight: 40    
+      - name: "Contact"
+        url: "/en/contact/"
+        weight: 50
