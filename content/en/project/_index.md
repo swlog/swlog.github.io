@@ -115,7 +115,7 @@ sections:
         
         **Tech Stack:** Python, tkinter, GUI Programming
         
-        [Learn More →](/project/01-rps/)
+        [Learn More →](/en/project/01-rps/)
     design:
       background:
         color: "#f8f9fa"
@@ -139,7 +139,7 @@ sections:
         
         **Tech Stack:** Python, NLP, Machine Learning, Data Analysis
         
-        [Learn More →](/project/02-movie/)
+        [Learn More →](/en/project/02-movie/)
     design:
       background:
         color: "#ffffff"
@@ -163,7 +163,7 @@ sections:
         
         **Tech Stack:** Python, Algorithms, A* Search, Heuristics
         
-        [Learn More →](/project/03-8-puzzle/)
+        [Learn More →](/en/project/03-8-puzzle/)
     design:
       background:
         color: "#f8f9fa"
@@ -187,7 +187,7 @@ sections:
         
         **Tech Stack:** Python, AI, Minimax Algorithm, Game Tree
         
-        [Learn More →](/project/04-omok/)
+        [Learn More →](/en/project/04-omok/)
     design:
       background:
         color: "#ffffff"
