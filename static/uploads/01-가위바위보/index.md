@@ -7,7 +7,8 @@ tags:
   - PYTHON
 image:
   filename: "rps.jpg"          # ✅ 파일명과 동일해야 함
-  focal_point: "center"        # ✅ 중앙 정렬
+  focal_point: "center"
+view: "view"          # ✅ 중앙 정렬
   preview_only: false        # ✅ 카드에 표시됨
 ---
 ## <i class="fab fa-python"></i> 프로젝트 개요
