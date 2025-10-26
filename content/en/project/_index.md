@@ -1,13 +1,13 @@
 ---
-title: "프로젝트"
-subtitle: "진행한 주요 프로젝트들을 한눈에 보기"
+title: "Projects"
+subtitle: "An overview of major projects at a glance"
 type: landing
 image:
   filename: "/uploads/backgroundImg2.jpg"
   focal_point: "Smart"
   preview_only: true
-  caption: "프로젝트 포트폴리오 - Python, AI, 알고리즘"
-  alt_text: "프로젝트 및 개발 관련 이미지"
+  caption: "Project Portfolio - Python, AI, Algorithms"
+  alt_text: "Project and development-related image"
 
 sections:
   - block: markdown
@@ -84,10 +84,10 @@ sections:
         
         <div class="hero-section">
           <div class="hero-content">
-            <h1 class="hero-title">포트폴리오</h1>
-            <p class="hero-subtitle">Python과 AI를 활용한 다양한 프로젝트들을 소개합니다💡</p>
+            <h1 class="hero-title">Portfolio</h1>
+            <p class="hero-subtitle">Introducing various projects utilizing Python and AI 💡</p>
             <a href="#projects" class="hero-cta">
-              <i class="fas fa-arrow-down"></i> 프로젝트 보기
+              <i class="fas fa-arrow-down"></i> View Projects
             </a>
           </div>
         </div>
@@ -99,23 +99,23 @@ sections:
         padding: ["0", "0", "0", "0"]
   
 
-  # 개별 프로젝트 섹션들 (앵커용)
+  # Individual project sections (for anchors)
   - block: markdown
     content:
-      title: "가위바위보 게임"
+      title: "Rock-Paper-Scissors Game"
       text: |
-        ## 🎮 가위바위보 게임
+        ## 🎮 Rock-Paper-Scissors Game
         
-        Python의 tkinter를 활용한 GUI 기반 가위바위보 게임입니다.
+        A GUI-based rock-paper-scissors game built with Python’s tkinter.
         
-        **주요 기능:**
-        - 사용자와 컴퓨터 간의 가위바위보 게임
-        - 직관적인 GUI 인터페이스
-        - 게임 결과 통계 및 승률 계산
+        **Key Features:**
+        - Rock-paper-scissors gameplay between user and computer  
+        - Intuitive GUI interface  
+        - Game statistics and win rate tracking  
         
-        **기술 스택:** Python, tkinter, GUI 프로그래밍
+        **Tech Stack:** Python, tkinter, GUI Programming
         
-        [자세히 보기 →](/project/01-rps/)
+        [Learn More →](/project/01-rps/)
     design:
       background:
         color: "#f8f9fa"
@@ -126,20 +126,20 @@ sections:
 
   - block: markdown
     content:
-      title: "영화 리뷰 감성 분석"
+      title: "Movie Review Sentiment Analysis"
       text: |
-        ## 🎬 영화 리뷰 감성 분석
+        ## 🎬 Movie Review Sentiment Analysis
         
-        자연어 처리를 활용한 영화 리뷰 텍스트의 감성 분석 프로젝트입니다.
+        A sentiment analysis project for movie reviews using Natural Language Processing (NLP).
         
-        **주요 기능:**
-        - 영화 리뷰 텍스트 전처리
-        - 감성 분석 모델 구축
-        - 긍정/부정 감성 분류
+        **Key Features:**
+        - Preprocessing of movie review text  
+        - Sentiment classification model construction  
+        - Positive/Negative sentiment categorization  
         
-        **기술 스택:** Python, 자연어처리, 머신러닝, 데이터분석
+        **Tech Stack:** Python, NLP, Machine Learning, Data Analysis
         
-        [자세히 보기 →](/project/02-movie/)
+        [Learn More →](/project/02-movie/)
     design:
       background:
         color: "#ffffff"
@@ -150,20 +150,20 @@ sections:
 
   - block: markdown
     content:
-      title: "8퍼즐 프로그램"
+      title: "8-Puzzle Program"
       text: |
-        ## 🧩 8퍼즐 프로그램
+        ## 🧩 8-Puzzle Program
         
-        탐색 알고리즘을 활용한 8퍼즐 게임 해결 프로그램입니다.
+        A puzzle-solving program that utilizes search algorithms.
         
-        **주요 기능:**
-        - A* 알고리즘 구현
-        - 휴리스틱 함수 설계
-        - 최적 경로 탐색
+        **Key Features:**
+        - Implementation of the A* algorithm  
+        - Design of heuristic functions  
+        - Optimal path search  
         
-        **기술 스택:** Python, 알고리즘, A* 탐색, 휴리스틱
+        **Tech Stack:** Python, Algorithms, A* Search, Heuristics
         
-        [자세히 보기 →](/project/03-8-puzzle/)
+        [Learn More →](/project/03-8-puzzle/)
     design:
       background:
         color: "#f8f9fa"
@@ -174,20 +174,20 @@ sections:
 
   - block: markdown
     content:
-      title: "오목 게임 AI"
+      title: "Gomoku Game AI"
       text: |
-        ## ⚫ 오목 게임 AI
+        ## ⚫ Gomoku Game AI
         
-        인공지능을 활용한 오목 게임 AI 개발 프로젝트입니다.
+        A Gomoku (Five-in-a-Row) game AI project using artificial intelligence.
         
-        **주요 기능:**
-        - 미니맥스 알고리즘 구현
-        - 게임 트리 탐색
-        - AI vs 사용자 대전
+        **Key Features:**
+        - Implementation of the Minimax algorithm  
+        - Game tree search  
+        - AI vs Player mode  
         
-        **기술 스택:** Python, AI, 미니맥스 알고리즘, 게임 트리
+        **Tech Stack:** Python, AI, Minimax Algorithm, Game Tree
         
-        [자세히 보기 →](/project/04-omok/)
+        [Learn More →](/project/04-omok/)
     design:
       background:
         color: "#ffffff"
@@ -196,4 +196,3 @@ sections:
         padding: ["60px", "0", "60px", "0"]
     id: "omok-ai"
 ---
-
