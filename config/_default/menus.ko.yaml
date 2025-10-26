@@ -22,29 +22,73 @@ main:
     url: "/"
     weight: 10
 
+  # 소개 메뉴 (상위)
   - name: "소개"
-    url: "about"
+    url: "/about/"
     weight: 20
 
+  # 소개 하위 메뉴들
+  - parent: "소개"
+    name: "자기소개"
+    url: "/about/about"
+    weight: 21
+
+  - parent: "소개"
+    name: "기술스택"
+    url: "/about/tech-stack"
+    weight: 22
+
+  # 프로젝트 메뉴 (상위)
   - name: "프로젝트"
     url: "/project/"
     weight: 30
 
-  # 상위 메뉴 (활동)
+  # 프로젝트 하위 메뉴들 (앵커 링크)
+  - parent: "프로젝트"
+    name: "가위바위보 게임"
+    url: "/project/#rps-game"
+    weight: 31
+
+  - parent: "프로젝트"
+    name: "영화 리뷰 감성 분석"
+    url: "/project/#movie-review"
+    weight: 32
+
+  - parent: "프로젝트"
+    name: "8퍼즐 프로그램"
+    url: "/project/#eight-puzzle"
+    weight: 33
+
+  - parent: "프로젝트"
+    name: "오목 게임 AI"
+    url: "/project/#omok-ai"
+    weight: 34
+
+  # 활동 메뉴 (상위)
   - name: "활동"
     url: "/activities/"
     weight: 40
 
-  # 하위 메뉴들 (드롭다운)
+  # 활동 하위 메뉴들
   - parent: "활동"
-    name: "교내활동"
-    url: "/activities/oncampus/"
+    name: "WHO 동아리 회장"
+    url: "/activities/oncampus/hackerthon/"
     weight: 41
 
   - parent: "활동"
-    name: "교외활동"
-    url: "/activities/offcampus/"
+    name: "2025 SW 해커톤 총괄"
+    url: "/activities/oncampus/hackerthon/"
     weight: 42
+
+  - parent: "활동"
+    name: "WHO 동아리 활동"
+    url: "/activities/oncampus/club/"
+    weight: 43
+
+  - parent: "활동"
+    name: "KB 디지털 서포터즈"
+    url: "/activities/offcampus/kb-digital-supporters/"
+    weight: 44
 
   - name: "연락처"
     url: "/contact/"

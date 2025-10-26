@@ -13,6 +13,3 @@ en:
 ko:
   languageCode: ko-kr
   contentDir: content/ko
-  title: SWLOG
-  params:
-    description: 최서원의 개인 포트폴리오입니다.

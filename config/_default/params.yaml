@@ -1,18 +1,9 @@
-# config/_default/params.yaml
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-marketing:
-  seo:
-    site_type: "Person"
-    org_name: "최서원 포트폴리오 | 전북대학교 컴퓨터공학부"
-    description: "전북대학교 컴퓨터공학부 최서원의 포트폴리오입니다."
-    twitter: ""
-    image: "uploads/swlog_logo.jpg"
-  analytics:
-    google_analytics: ""
-    baidu_tongji: ""
-  verification:
-    google: ""
-
+# Appearance
 appearance:
   theme_day: custom
   theme_night: custom
@@ -20,3 +11,105 @@ appearance:
   font_size: L
   custom_css:
     - css/custom.css
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: '전북대학교 컴퓨터공학부'
+    description: '전북대학교 컴퓨터공학부 최서원의 포트폴리오입니다. Python, 웹 개발 프로젝트와 경험을 소개합니다.'
+    twitter: ''
+    image: 'media/icon.png'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    align: r
+    show_logo: true
+    logo:
+      text: "SWLOG"  # 텍스트 로고
+    show_language: true
+    show_day_night: true
+    show_search: true
+    highlight_active_link: false
+
+footer:
+  copyright:
+    notice: '© {year} 최서원 (Seowon Choi). This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features
+features:
+  syntax_highlighter:
+    enable: true
+    extra_languages:
+      - r
+      - latex
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/swlog/swlog.github.io'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+  search:
+    provider: 'wowchemy'
+    wowchemy:
+      min_length: 1
+      threshold: 0.3
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+
+extensions:
+  cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+
+# Default Open Graph/Twitter preview image (used by Hugo/Wowchemy)
+images:
+  - '/media/icon.png'
+
