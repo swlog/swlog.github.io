@@ -10,8 +10,7 @@ sections:
       text: "전북대학교에서의 다양한 활동들을 소개합니다📚"
       filters:
         folders:
-          - activities/oncampus
-          - activities/offcampus
+          - activities
     design:
       view: compact
       columns: 1
