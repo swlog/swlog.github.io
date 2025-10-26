@@ -20,7 +20,7 @@ marketing:
     org_name: '전북대학교 컴퓨터공학부'
     description: '전북대학교 컴퓨터공학부 최서원의 포트폴리오입니다. Python, 웹 개발 프로젝트와 경험을 소개합니다.'
     twitter: ''
-    image: 'media/icon.png'
+    image: 'upload/logo.png'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -37,7 +37,8 @@ header:
     align: r
     show_logo: true
     logo:
-      text: "SWLOG"  # 텍스트 로고
+      image: "upload/logo.png"   # ✅ 추가
+      text: ""                        # 텍스트 제거
     show_language: true
     show_day_night: true
     show_search: true
