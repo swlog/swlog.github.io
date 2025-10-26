@@ -1,12 +1,12 @@
 ---
 # Display name
-title: choi seo won
+title: 최서원
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Jeonbuk National University / Department of Computer Engineering
+role: 전북대학교/컴퓨터공학과
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ status:
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I’m a Computer Engineering student at Jeonbuk National University with a strong interest in cloud computing.
+bio: 전북대학교 컴퓨터공학부 학생으로, 인공지능에 관심이 있습니다.
 
 #interests:
 #- Artificial Intelligence
@@ -66,10 +66,32 @@ social:
 #email: ""
 ---
 
-👋 안녕하세요! 저는 최서원, 전북대학교 컴퓨터인공지능학부에서 공부하며 AI, 클라우드, 오픈소스 프로젝트를 연구하고 있습니다.  
-현재는 소프트웨어중심대학 사업단과 협력해 전북권 대학 SW 통합 정보 플랫폼(SIIS)을 기획·개발 중이며,  
-동시에 오픈소스 SW 아이디어 해커톤을 주관하고 있습니다.   
-관심 분야는 인공지능 응용, 분산 시스템, DevOps 자동화이며  
+👋 안녕하세요! 저는 최서원입니다. 전북대학교 컴퓨터공학부에서 공부하며 AI, 클라우드, 오픈소스 프로젝트를 연구하고 있습니다.  
+관심 분야는 인공지능 응용, 클라우드이며, DevOps 자동화이며  
 기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/안녕하십니까.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/자기소개서_ko.pdf" "newtab" >}}자기소개서(PDF) 다운로드{{< /staticref >}}
+
+<div style="margin-top:20px; padding-top:10px;">
+
+  <hr style="border:0; border-top:2px solid #ccc; width:100%; margin-bottom:20px;">
+
+  <h3 style="font-weight:700;">관심분야</h3>
+  <p style="text-align:justify; font-size:1rem; margin-top:10px;">
+    인공지능, 클라우드, 네트워크 관련 기술에 관심이 있으며
+    이를 활용한 효율적인 시스템 설계와 유지보수 자동화를 목표로 하고 있습니다.
+  </p>
+
+  <h3 style="font-weight:700; margin-top:25px;">학위</h3>
+  <p style="text-align:justify; font-size:1rem; margin-top:10px;">
+    <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
+    <strong>컴퓨터공학부</strong><br>
+    <span style="color:#555;">전북대학교 (JBNU)</span>
+  </p>
+  <h3 style="font-weight:700; margin-top:25px;">고등학교</h3>
+  <p style="text-align:justify; font-size:1rem; margin-top:10px;">
+    <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
+    <strong>전북특별자치도 익산 이리여자고등학교</strong><br>
+    <span style="color:#555;">2022년도 졸업</span>
+  </p>
+</div>

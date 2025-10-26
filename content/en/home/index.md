@@ -1,16 +1,18 @@
 ---
-title: "활동"
-subtitle: "교내 및 교외 활동 기록"
-type: landing
+# Homepage
+type: widget_page
 
-sections:
-  - block: collection
-    content:
-      title: ""
-      text: "전북대학교에서의 다양한 활동들을 소개합니다📚"
-      filters:
-        folders:
-          - activities
+# Homepage is headless, other widget pages are not.
+headless: true
+
+# 위젯 순서 정의
+widgets:
+  - name: portfolio
+    weight: 10
+    active: true
+    headless: true
+    title: "프로젝트"
+    subtitle: "Python과 AI를 활용한 다양한 프로젝트들"
     design:
       view: compact
       columns: 1

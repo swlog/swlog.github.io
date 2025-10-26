@@ -1,16 +1,16 @@
 ---
-title: "활동"
-subtitle: "교내 및 교외 활동 기록"
+title: "소개"
+subtitle: "최서원에 대해 알아보세요"
 type: landing
 
 sections:
   - block: collection
     content:
       title: ""
-      text: "전북대학교에서의 다양한 활동들을 소개합니다📚"
+      text: "개인 정보와 기술 스택을 확인해보세요👨‍💻"
       filters:
         folders:
-          - activities
+          - about
     design:
       view: compact
       columns: 1
