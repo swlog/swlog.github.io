@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "프로젝트"
 subtitle: "진행한 주요 프로젝트들을 한눈에 보기"
 type: landing
@@ -196,4 +196,87 @@ sections:
         padding: ["60px", "0", "60px", "0"]
     id: "omok-ai"
 ---
+ -->
 
+<section id="projects" class="project-grid">
+  {{ range (where site.RegularPages "Type" "project") }}
+    {{ $item := . }}
+    {{ $has_attachments := partial "functions/has_attachments" $item }}
+
+    {{ $link := $item.RelPermalink }}
+    {{ $target := "" }}
+    {{ if $item.Params.external_link }}
+      {{ $link = $item.Params.external_link }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ end }}
+
+    {{/* Summary */}}
+    {{ $summary := "" }}
+    {{ if $item.Params.summary }}
+      {{ $summary = $item.Params.summary | markdownify | emojify }}
+    {{ else if $item.Params.abstract }}
+      {{ $summary = $item.Params.abstract | markdownify | emojify }}
+    {{ else if $item.Summary }}
+      {{ $summary = $item.Summary }}
+    {{ end }}
+
+    {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
+
+    <div class="card-simple view-card">
+      {{ with $resource }}
+        {{ $image := .Resize "550x" }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+        <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="card-image hover-overlay">
+          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title }}" class="img-responsive" loading="lazy" style="border-radius:12px;">
+        </a>
+      {{ end }}
+
+      <div class="card-text">
+        <h4 class="card-title mt-3 mb-2">
+          <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title | markdownify | emojify }}</a>
+        </h4>
+
+        {{ with $summary }}
+          <p class="card-summary">{{ . }}</p>
+        {{ end }}
+
+        {{ if $has_attachments }}
+          <div class="btn-links">
+            {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</section>
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 40px 0;
+}
+.card-simple {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card-simple:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.card-title a {
+  color: #222;
+  text-decoration: none;
+}
+.card-title a:hover {
+  color: #007bff;
+}
+.card-summary {
+  font-size: 0.95rem;
+  color: #555;
+}
+</style>
