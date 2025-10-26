@@ -198,7 +198,7 @@ sections:
 ---
   -->
 
-  ---
+ ---
 title: "프로젝트"
 subtitle: "진행한 주요 프로젝트들을 한눈에 보기"
 type: landing
@@ -229,9 +229,9 @@ sections:
       title: "프로젝트 모음"
       filters:
         folders:
-          - project     
+          - project
     design:
-      view: grid      
+      view: grid
       columns: 3
       spacing: 30
 ---
