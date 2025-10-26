@@ -1,0 +1,15 @@
+<!-- layouts/partials/views/grid.html -->
+<div class="project-grid">
+  {{ range (where site.RegularPages "Type" "project") }}
+    {{ partial "views/project-card.html" . }}
+  {{ end }}
+</div>
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 40px 0;
+}
+</style>

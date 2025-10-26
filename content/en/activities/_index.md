@@ -1,13 +1,13 @@
 ---
 title: "Activities"
-subtitle: "Records of on-campus and off-campus activities"
+subtitle: "Records of on-campus and off-campus experiences"
 type: landing
 
 sections:
   - block: collection
     content:
       title: ""
-      text: "Introducing various activities at Jeonbuk National University 📚"
+      text: "Introducing various activities and experiences at Jeonbuk National University📚"
       filters:
         folders:
           - activities
