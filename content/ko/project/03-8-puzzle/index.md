@@ -5,10 +5,13 @@ date: 2025-05-10
 type: project
 tags:
   - AI
+  - 알고리즘
+  - 탐색
 image:
   filename: "puzzle.jpg"
   focal_point: "center"
   preview_only: false
+external_link: ""
 ---
 
 ## <i class="fab fa-python"></i> 프로젝트 개요
