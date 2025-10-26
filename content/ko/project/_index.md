@@ -223,16 +223,15 @@ sections:
           </div>
         </div>
 
-  # 🔽 여기에서 grid view를 호출합니다!
   - block: collection
     id: "project-grid"
     content:
       title: "프로젝트 모음"
       filters:
         folders:
-          - project     # ✅ content/project 폴더의 내용 자동 불러오기
+          - project     
     design:
-      view: grid        # ✅ grid.html 뷰 사용
+      view: grid      
       columns: 3
       spacing: 30
 ---
