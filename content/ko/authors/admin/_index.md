@@ -88,5 +88,10 @@ social:
     <strong>컴퓨터공학부</strong><br>
     <span style="color:#555;">전북대학교 (JBNU)</span>
   </p>
-
+  <h3 style="font-weight:700; margin-top:25px;">고등학교</h3>
+  <p style="text-align:justify; font-size:1rem; margin-top:10px;">
+    <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
+    <strong>전북특별자치도 익산 이리여자고등학교</strong><br>
+    <span style="color:#555;">2022년도 졸업</span>
+  </p>
 </div>
