@@ -5,14 +5,14 @@ type: widget_page
 # Homepage is headless, other widget pages are not.
 headless: true
 
-# 위젯 순서 정의
+# Define widget order
 widgets:
   - name: portfolio
     weight: 10
     active: true
     headless: true
-    title: "프로젝트"
-    subtitle: "Python과 AI를 활용한 다양한 프로젝트들"
+    title: "Projects"
+    subtitle: "Various projects utilizing Python and AI"
     design:
       view: compact
       columns: 1

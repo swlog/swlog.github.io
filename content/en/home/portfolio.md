@@ -2,8 +2,8 @@
 widget: portfolio
 headless: true
 active: true
-title: "프로젝트 모음"
-subtitle: "Python과 AI를 활용한 다양한 프로젝트들"
+title: "Project Collection"
+subtitle: "Various projects utilizing Python and AI"
 weight: 30
 design:
   view: compact

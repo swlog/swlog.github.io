@@ -51,8 +51,6 @@ Through various projects in search algorithms, natural language processing, and 
 - **Game AI**: Alpha-Beta search, heuristic evaluation
 - **Optimization**: State-space search
 
-## 📚 학습 경험
-
 ## 📚 Learning Experience
 
 ### Project Experience

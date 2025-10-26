@@ -1,11 +1,11 @@
 ---
-title: 가위바위보 게임
-summary: Python으로 구현한 간단한 CLI 기반 가위바위보 게임
+title: Rock-Paper-Scissors Game
+summary: A simple CLI-based rock-paper-scissors game implemented in Python
 date: 2025-04-01
 type: project
 tags:
   - PYTHON
-  - 게임
+  - Game
   - CLI
 image:
   filename: "rps.jpg"
@@ -14,24 +14,24 @@ image:
 external_link: ""
 ---
 
-## <i class="fab fa-python"></i> 프로젝트 개요
+## <i class="fab fa-python"></i> Project Overview
 
-이 프로젝트는 **Python의 기본 문법과 조건문, 반복문**을 학습하기 위해 제작한  
-**CLI(커맨드라인 인터페이스)** 기반의 가위바위보 게임입니다.  
+This project is a **CLI (Command-Line Interface)** based Rock-Paper-Scissors game  
+created to practice **basic Python syntax, conditional statements, and loops**.  
 
-플레이어가 입력한 선택(가위·바위·보)에 따라  
-컴퓨터의 무작위 선택과 비교하여 승패를 판단합니다.  
-
----
-
-## <i class="fab fa-steam-symbol"></i> 주요 기능
-
-- 사용자 입력 및 예외 처리  
-- `random` 모듈을 활용한 컴퓨터 선택 구현  
-- 승·패·무승부 결과 출력  
-- 반복 플레이 기능  
+The player’s input (rock, paper, or scissors) is compared  
+with the computer’s random choice to determine the outcome (win, lose, or draw).  
 
 ---
 
-## <i class="fab fa-dropbox"></i> 코드 다운로드
-</> [rockpaperscissors.zip 다운로드](/uploads/rock_scissors_paper.py)
+## <i class="fab fa-steam-symbol"></i> Key Features
+
+- User input and exception handling  
+- Computer choice implemented using the `random` module  
+- Displays win/lose/draw results  
+- Repeat play function  
+
+---
+
+## <i class="fab fa-dropbox"></i> Code Download
+</> [Download rockpaperscissors.zip](/uploads/rock_scissors_paper.py)
