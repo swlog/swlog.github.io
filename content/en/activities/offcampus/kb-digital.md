@@ -1,6 +1,6 @@
 ---
-title: "국민은행 디지털 서포터즈"
-summary: "국민은행 디지털 서포터즈로 활동하며 금융 서비스 디지털화에 기여하고 있습니다."
+title: "KB Kookmin Bank Digital Supporters"
+summary: "Contributed to the digitalization of financial services as a member of KB Kookmin Bank’s Digital Supporters."
 image:
   filename: "kb-digital.jpg"
   focal_point: "Smart"
@@ -8,50 +8,50 @@ image:
 date: "2024-12-01"
 ---
 
-## 🏦 국민은행 디지털 서포터즈
+## 🏦 KB Kookmin Bank Digital Supporters
 
-### 활동 개요
-- **기관**: 국민은행 (KB국민은행)
-- **프로그램**: 디지털 서포터즈
-- **기간**: 2024년 12월 ~ 현재
-- **역할**: 디지털 서포터즈 멤버
+### Activity Overview
+- **Organization**: KB Kookmin Bank  
+- **Program**: Digital Supporters  
+- **Period**: December 2024 – Present  
+- **Role**: Digital Supporters Member  
 
-### 주요 활동 내용
+### Main Activities
 
-#### 디지털 금융 서비스 체험 및 피드백
-- **모바일뱅킹 앱**: 사용자 경험 개선을 위한 피드백 제공
-- **온라인 금융 서비스**: 디지털 플랫폼 사용성 평가
-- **신규 서비스**: 베타 테스트 및 개선사항 제안
+#### Experience and Feedback on Digital Financial Services
+- **Mobile Banking App**: Provided feedback to improve user experience  
+- **Online Financial Services**: Evaluated usability of digital platforms  
+- **New Services**: Participated in beta testing and suggested improvements  
 
-#### 금융 디지털화 트렌드 연구
-- **핀테크 동향**: 최신 금융 기술 트렌드 분석
-- **디지털 전환**: 전통 금융업의 디지털 혁신 사례 연구
-- **사용자 행동**: 디지털 금융 서비스 이용 패턴 분석
+#### Research on Digital Financial Trends
+- **Fintech Trends**: Analyzed the latest financial technology developments  
+- **Digital Transformation**: Studied digital innovation cases in traditional finance  
+- **User Behavior**: Analyzed user patterns in digital financial service usage  
 
-#### 콘텐츠 제작 및 홍보
-- **체험 후기**: 디지털 서비스 사용 경험 공유
-- **SNS 활동**: 금융 디지털화의 중요성 홍보
-- **세미나 참여**: 금융 디지털 전환 관련 세미나 참석
+#### Content Creation and Promotion
+- **Experience Reviews**: Shared user experiences with digital services  
+- **Social Media Activities**: Promoted the importance of financial digitalization  
+- **Seminar Participation**: Attended seminars on digital transformation in finance  
 
-## 🎯 기여 성과
+## 🎯 Achievements
 
-### 사용자 관점 개선
-- 모바일뱅킹 앱 사용성 개선 제안
-- 디지털 금융 서비스 접근성 향상 방안 제시
-- 젊은 세대의 금융 서비스 니즈 반영
+### User-Centered Improvements
+- Proposed usability enhancements for mobile banking apps  
+- Suggested strategies to improve accessibility of digital financial services  
+- Reflected the needs of younger generations in financial service design  
 
-### 디지털 금융 인식 개선
-- 금융 디지털화의 필요성과 장점 홍보
-- 안전한 디지털 금융 서비스 이용 방법 안내
-- 금융 리터러시 향상을 위한 콘텐츠 제작
+### Promoting Digital Finance Awareness
+- Raised awareness of the necessity and benefits of digital finance  
+- Provided guidance on safe use of digital financial services  
+- Created content to improve financial literacy  
 
-## 🏆 수상 및 인정
-- 우수 서포터즈 활동 인정
-- 디지털 금융 서비스 개선 기여 공로 인정
-- 금융 디지털화 확산 기여 인정
+## 🏆 Awards and Recognition
+- Recognized as an Outstanding Supporter  
+- Acknowledged for contributions to digital financial service improvements  
+- Commended for promoting the expansion of digital finance  
 
-## 💡 학습 성과
-- 금융 서비스 디지털 전환 과정 이해
-- 사용자 중심의 서비스 설계 방법론 습득
-- 금융업계의 디지털 혁신 동향 파악
-- 실무진과의 네트워킹 및 인사이트 교환
+## 💡 Learning Outcomes
+- Gained understanding of the digital transformation process in financial services  
+- Acquired methodologies for user-centered service design  
+- Identified digital innovation trends in the financial industry  
+- Exchanged insights and networked with industry professionals

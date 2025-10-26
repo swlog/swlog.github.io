@@ -1,13 +1,13 @@
 ---
-title: "활동"
-subtitle: "교내 및 교외 활동 기록"
+title: "Activities"
+subtitle: "Records of on-campus and off-campus activities"
 type: landing
 
 sections:
   - block: collection
     content:
       title: ""
-      text: "전북대학교에서의 다양한 활동들을 소개합니다📚"
+      text: "Introducing various activities at Jeonbuk National University 📚"
       filters:
         folders:
           - activities

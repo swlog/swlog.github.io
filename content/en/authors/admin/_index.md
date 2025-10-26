@@ -1,12 +1,12 @@
 ---
 # Display name
-title: 최서원
+title: Seowon Choi  
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: 전북대학교/컴퓨터공학과
+role: Jeonbuk National University / Department of Computer Engineering   
 
 # Status emoji
 status:
@@ -14,84 +14,53 @@ status:
 
 # Organizations/Affiliations
 #organizations:
-#- name: 腾讯
+#- name: Tencent
 #  url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 전북대학교 컴퓨터공학부 학생으로, 인공지능에 관심이 있습니다.
+bio: A student at the Department of Computer Engineering, Jeonbuk National University, interested in Artificial Intelligence.   
 
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
-
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
-
-# Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:selapina03@jbnu.ac.kr' # For a direct email link, use "mailto:test@example.org".
+    link: 'mailto:selapina03@jbnu.ac.kr'
   - icon: github
     icon_pack: fab
     link: https://github.com/swlog/swlog.github.io
   - icon: instagram
     icon_pack: fab
     link: https://www.instagram.com/seo._.w0n/
-# Uncomment below for Github link
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
-
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
 ---
 
-👋 안녕하세요! 저는 최서원입니다. 전북대학교 컴퓨터공학부에서 공부하며 AI, 클라우드, 오픈소스 프로젝트를 연구하고 있습니다.  
-관심 분야는 인공지능 응용, 클라우드이며, DevOps 자동화이며  
-기술로 더 단단한 사회를 만드는 개발자를 목표로 성장하고 있습니다.   
+👋 Hello! I’m **Seowon Choi**, a student majoring in Computer Engineering at Jeonbuk National University.  
+I’m studying **AI**, **Cloud Computing**, and **Open Source projects**,  
+with a strong interest in **AI applications**, **cloud**, and **DevOps automation**.  
+My goal is to become a developer who contributes to building a stronger and more efficient society through technology.  
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/자기소개서_ko.pdf" "newtab" >}}자기소개서(PDF) 다운로드{{< /staticref >}}
+
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/Self_en.pdf" "newtab" >}}Download Resume (PDF){{< /staticref >}}  
 
 <div style="margin-top:20px; padding-top:10px;">
 
   <hr style="border:0; border-top:2px solid #ccc; width:100%; margin-bottom:20px;">
 
-  <h3 style="font-weight:700;">관심분야</h3>
+  <h3 style="font-weight:700;">Areas of Interest</h3> 
   <p style="text-align:justify; font-size:1rem; margin-top:10px;">
-    인공지능, 클라우드, 네트워크 관련 기술에 관심이 있으며
-    이를 활용한 효율적인 시스템 설계와 유지보수 자동화를 목표로 하고 있습니다.
+    I’m interested in Artificial Intelligence, cloud, and network technologies,  
+    aiming to design efficient systems and automate maintenance using these technologies.  
   </p>
 
-  <h3 style="font-weight:700; margin-top:25px;">학위</h3>
+  <h3 style="font-weight:700; margin-top:25px;">Degree</h3>  
   <p style="text-align:justify; font-size:1rem; margin-top:10px;">
     <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
-    <strong>컴퓨터공학부</strong><br>
-    <span style="color:#555;">전북대학교 (JBNU)</span>
+    <strong>Department of Computer Engineering</strong><br>
+    <span style="color:#555;">Jeonbuk National University (JBNU)</span>
   </p>
-  <h3 style="font-weight:700; margin-top:25px;">고등학교</h3>
+
+  <h3 style="font-weight:700; margin-top:25px;">High School</h3>   
   <p style="text-align:justify; font-size:1rem; margin-top:10px;">
     <i class="fas fa-graduation-cap" style="margin-right:8px; color:#000;"></i>
-    <strong>전북특별자치도 익산 이리여자고등학교</strong><br>
-    <span style="color:#555;">2022년도 졸업</span>
+    <strong>Iri Girls’ High School, Iksan, Jeonbuk Special Self-Governing Province</strong><br>  
+    <span style="color:#555;">Graduated in 2022</span>      
   </p>
 </div>

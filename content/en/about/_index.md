@@ -1,13 +1,13 @@
 ---
-title: "소개"
-subtitle: "최서원에 대해 알아보세요"
+title: "Introduction"
+subtitle: "Learn more about Seowon Choi"
 type: landing
 
 sections:
   - block: collection
     content:
       title: ""
-      text: "개인 정보와 기술 스택을 확인해보세요👨‍💻"
+      text: "Check out my personal information and tech stack 👨‍💻"
       filters:
         folders:
           - about

@@ -1,13 +1,13 @@
 ---
-title: "기술 스택"
-subtitle: "사용 가능한 기술 스택을 소개합니다"
+title: "Tech Stack"
+subtitle: "Introducing the technologies I use"
 date: 2025-01-01
 image:
   filename: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop"
   focal_point: "Smart"
   preview_only: true
-  caption: "기술 스택 - Python, AI, 데이터 분석"
-  alt_text: "기술 및 코딩 관련 이미지"
+  caption: "Tech Stack - Python, AI, Data Analysis"
+  alt_text: "Technology and coding related image"
 ---
 
 <!-- Styles imported from assets/scss/custom-cards.scss -->
@@ -16,7 +16,7 @@ image:
 
 ![tech-stack](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop)
 
-## 🛠️ 기술 스택
+## 🛠️  Tech Stack
 
 ### Programming Languages
 <div class="tech-cards-grid">

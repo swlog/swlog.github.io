@@ -1,25 +1,25 @@
 ---
-title: "WHO 동아리 활동"
-summary: "전북대학교 컴퓨터 인공지능학부 WHO 동아리에서의 다양한 활동과 경험"
+title: "WHO Club Activities"
+summary: "Various activities and experiences in the WHO Club of the Department of Computer & Artificial Intelligence at Jeonbuk National University"
 date: "2024-09-01"
 ---
 
-## 🎯 동아리 활동 개요
+## 🎯 Club Activity Overview
 
-### WHO 동아리 소개
-- **동아리명**: WHO (We Help Others)
-- **소속**: 전북대학교 컴퓨터 인공지능학부
-- **활동 기간**: 2024년 9월 ~ 현재
-- **역할**: 회장 (2025년 3월부터)
+### About WHO Club
+- **Club Name**: WHO (We Help Others)  
+- **Affiliation**: Department of Computer & Artificial Intelligence, Jeonbuk National University  
+- **Activity Period**: September 2024 – Present  
+- **Role**: President (from March 2025)  
 
-### 주요 활동 내용
-- **정기 모임**: 매주 기술 세미나 및 프로젝트 공유
-- **스터디**: 프로그래밍 언어, 알고리즘, AI/ML 관련 학습
-- **프로젝트**: 팀 단위 개발 프로젝트 진행
-- **멘토링**: 신입생 대상 프로그래밍 기초 교육
+### Main Activities
+- **Regular Meetings**: Weekly technical seminars and project sharing  
+- **Study Sessions**: Learning programming languages, algorithms, and AI/ML topics  
+- **Projects**: Team-based development projects  
+- **Mentoring**: Providing programming basics education for freshmen  
 
-## 🚀 기여 활동
-- 동아리 운영진으로서 체계적인 활동 기획
-- 학부생들의 기술적 성장을 위한 환경 조성
-- 오픈소스 프로젝트 참여 및 기여 문화 확산
-- 해커톤 대회 기획 및 운영 지원
+## 🚀 Contributions
+- Planned and organized systematic club operations as part of the executive team  
+- Created an environment for students’ technical growth  
+- Promoted participation in open-source projects and a culture of contribution  
+- Supported planning and management of hackathon competitions

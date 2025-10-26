@@ -1,6 +1,6 @@
 ---
-title: "전북대학교 컴퓨터 인공지능학부 WHO 회장"
-summary: "컴퓨터 인공지능학부 WHO 동아리 회장으로 활동하며, 2025 SW 오픈소스 해커톤 대회를 총괄하고 있습니다."
+title: "President of WHO Club, Department of Computer & Artificial Intelligence, Jeonbuk National University"
+summary: "Serving as the president of the WHO Club and overseeing the 2025 Open Source Software Hackathon at Jeonbuk National University."
 image:
   filename: "hackathon.jpg"
   focal_point: "Smart"
@@ -8,26 +8,26 @@ image:
 date: "2025-03-01"
 ---
 
-## 🎯 주요 활동
+## 🎯 Main Activities
 
-### WHO 동아리 회장 (2025.03 ~ 현재)
-- **역할**: 전북대학교 컴퓨터 인공지능학부 WHO 동아리 회장
-- **기간**: 2025년 3월 ~ 현재
-- **주요 업무**: 
-  - 동아리 운영 및 관리
-  - 학부생 대상 기술 세미나 기획
-  - 프로젝트 협업 지원
+### President of WHO Club (Mar 2025 – Present)
+- **Role**: President of the WHO Club, Department of Computer & Artificial Intelligence, Jeonbuk National University  
+- **Period**: March 2025 – Present  
+- **Main Responsibilities**:  
+  - Managing and organizing club operations  
+  - Planning technical seminars for undergraduate students  
+  - Supporting project collaboration among members  
 
-### 2025 SW 오픈소스 해커톤 대회 총괄
-- **역할**: 해커톤 대회 총괄 운영
-- **기간**: 2025년 9월 진행
-- **주요 업무**:
-  - 대회 기획 및 운영
-  - 참가자 모집 및 관리
-  - 멘토링 및 기술 지원
-  - 심사 및 시상식 진행
+### General Director of the 2025 Open Source Software Hackathon
+- **Role**: Overall director of the hackathon event  
+- **Period**: Held in September 2025  
+- **Main Responsibilities**:  
+  - Planning and managing the hackathon event  
+  - Recruiting and coordinating participants  
+  - Providing mentorship and technical support  
+  - Overseeing judging and award ceremonies  
 
-## 🏆 성과
-- 동아리 회원 수 증가 및 활발한 활동 유도
-- 해커톤 대회 성공적 기획 및 운영
-- 학부생들의 개발 역량 향상에 기여
+## 🏆 Achievements
+- Increased club membership and encouraged active participation  
+- Successfully organized and executed the hackathon event  
+- Contributed to enhancing students’ software development capabilities
