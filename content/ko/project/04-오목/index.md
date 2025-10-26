@@ -9,7 +9,7 @@ tags:
   - 게임
   - 알고리즘
 image:
-  filename: "gomoku.jpg"
+  filename: "omok.jpg"
   focal_point: "center"
   preview_only: false
 external_link: ""

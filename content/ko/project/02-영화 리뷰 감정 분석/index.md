@@ -9,7 +9,7 @@ tags:
   - NLP
   - 감성분석
 image:
-  filename: "sentiment.jpg"
+  filename: "movie_review.jpg"
   focal_point: "center"
   preview_only: false
 external_link: ""
