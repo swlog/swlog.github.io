@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: "프로젝트"
 subtitle: "진행한 주요 프로젝트들을 한눈에 보기"
 type: landing
@@ -196,42 +196,5 @@ sections:
         padding: ["60px", "0", "60px", "0"]
     id: "omok-ai"
 ---
-  -->
 
- ---
-title: "프로젝트"
-subtitle: "진행한 주요 프로젝트들을 한눈에 보기"
-type: landing
-image:
-  filename: "/uploads/backgroundImg2.jpg"
-  focal_point: "Smart"
-  preview_only: true
-  caption: "프로젝트 포트폴리오 - Python, AI, 알고리즘"
-  alt_text: "프로젝트 및 개발 관련 이미지"
 
-sections:
-  - block: markdown
-    content:
-      text: |
-        <div class="hero-section">
-          <div class="hero-content">
-            <h1 class="hero-title">포트폴리오</h1>
-            <p class="hero-subtitle">Python과 AI를 활용한 다양한 프로젝트들을 소개합니다💡</p>
-            <a href="#project-grid" class="hero-cta">
-              <i class="fas fa-arrow-down"></i> 프로젝트 보기
-            </a>
-          </div>
-        </div>
-
-  - block: collection
-    id: "project-grid"
-    content:
-      title: "프로젝트 모음"
-      filters:
-        folders:
-          - project
-    design:
-      view: grid
-      columns: 3
-      spacing: 30
----
