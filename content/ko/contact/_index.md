@@ -1,5 +1,22 @@
-# 문의
+---
+title: "문의"
+image:
+  filename: "/uploads/backgroundImg1.jpg"
+  focal_point: "Smart"
+  preview_only: true
+  caption: "문의 페이지"
+  alt_text: "문의 페이지 배경 이미지"
+---
 
+<style>
+body {
+  background-image: url('/uploads/backgroundImg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
 
 <i class="fas fa-envelope"></i> [selapina03@jbnu.ac.kr](mailto:selapina03@jbnu.ac.kr)  
 <i class="fas fa-phone"></i> [+82-10-9548-9976](tel:+821095489976)  
