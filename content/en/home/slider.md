@@ -10,4 +10,4 @@ design:
   background:
     color: "transparent"    # (선택) 배경색 투명
 ---
-{{< slider_ko >}}
+{{< slider_en >}}

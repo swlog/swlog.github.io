@@ -1,11 +1,11 @@
 +++
-title = "최서원의 포트폴리오"
-description = "전북대학교 컴퓨터공학부 최서원의 포트폴리오입니다. 프로젝트와 연구 활동을 소개합니다."
+title = "Seowon Choi's Portfolio"
+description = "Portfolio of Seowon Choi, Department of Computer Engineering at Jeonbuk National University. Showcasing projects, research, and activities."
 draft = false
 private = false
 type = "widget_page"
 +++
 
-안녕하세요 👋  
-이곳은 전북대학교 컴퓨터공학부 **최서원**의 포트폴리오입니다.  
-프로젝트, 연구, 활동 기록을 한눈에 볼 수 있습니다.
+Hello 👋  
+Welcome to the portfolio of **Seowon Choi**, a student in the Department of Computer Engineering at Jeonbuk National University.  
+Here, you can explore my projects, research, and activity records all in one place.
