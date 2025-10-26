@@ -35,4 +35,4 @@ external_link: ""
 ---
 
 ## <i class="fab fa-dropbox"></i> 코드 다운로드
-</> [moviesentiment.zip 다운로드](/uploads/nsmc.zip)
+</> [moviesentiment.zip 다운로드](/uploads/nsmc_simple.zip)
