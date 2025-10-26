@@ -19,7 +19,7 @@
   position: relative;
 }
 
-/* 중앙 텍스트 */
+/* Center Text */
 #homeCarousel .carousel-caption {
   position: absolute;
   top: 55%;
@@ -50,7 +50,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* 텍스트 애니메이션 */
+/* Text Animation */
 #homeCarousel .carousel-item .carousel-caption h1,
 #homeCarousel .carousel-item .carousel-caption p {
   opacity: 0;
@@ -67,7 +67,7 @@
   transition: all .6s ease .18s;
 }
 
-/* ✅ 하단 인디케이터 — 작고 얇은 바형 */
+/* ✅ Bottom Indicator — Thin Bar Style */
 #homeCarousel.carousel .carousel-indicators {
   bottom: 1.2rem;
   gap: 6px;
@@ -96,7 +96,7 @@
   transform: translateY(-0.3px);
 }
 
-/* 반응형 */
+/* Responsive */
 @media (max-width: 992px) {
   #homeCarousel .carousel-item { min-height: 60vh; }
   #homeCarousel .carousel-caption h1 { font-size: 1.8rem; }
@@ -111,7 +111,7 @@
 <div class="fullbleed">
   <div id="homeCarousel" class="carousel slide carousel-fade"
        data-bs-ride="carousel"
-       data-bs-interval="5000"> <!-- ✅ 5초마다 자동 전환 -->
+       data-bs-interval="5000"> <!-- ✅ Auto switch every 5 seconds -->
        
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
@@ -120,35 +120,35 @@
     </div>
 
     <div class="carousel-inner">
-      <!-- 슬라이드 1 -->
+      <!-- Slide 1 -->
       <div class="carousel-item active"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide1.jpg');">
         <div class="carousel-caption">
-          <h1>최서원의 포트폴리오</h1>
-          <p>프로젝트와 배움을 통해 성장한 흔적을 담았습니다.</p>
+          <h1>Seowon Choi’s Portfolio</h1>
+          <p>A collection of my growth through projects and learning.</p>
         </div>
       </div>
 
-      <!-- 슬라이드 2 -->
+      <!-- Slide 2 -->
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide2.jpg');">
         <div class="carousel-caption">
-          <h1>활동</h1>
-          <p>즐거움과 배움이 있는 활동</p>
+          <h1>Activities</h1>
+          <p>Learning and joy through meaningful experiences.</p>
         </div>
       </div>
 
-      <!-- 슬라이드 3 -->
+      <!-- Slide 3 -->
       <div class="carousel-item"
            style="background-image:linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('/uploads/slide3.jpg');">
         <div class="carousel-caption">
-          <h1>연락하기</h1>
-          <p>언제나 연락은 환영입니다.</p>
+          <h1>Contact</h1>
+          <p>Feel free to reach out anytime.</p>
         </div>
       </div>
     </div>
 
-    <!-- 좌우 화살표 -->
+    <!-- Navigation Arrows -->
     <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
@@ -163,16 +163,16 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-<!-- ✅ 자동 슬라이드 JS 설정 (5초마다 전환) -->
+<!-- ✅ Auto Slide JS (5-second interval) -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const myCarousel = document.querySelector('#homeCarousel');
   if (myCarousel) {
     new bootstrap.Carousel(myCarousel, {
-      interval: 5000,   // 5초마다 자동 전환
-      ride: 'carousel', // 페이지 로드 시 자동 시작
-      pause: false,     // 마우스 올려도 정지하지 않음
-      wrap: true        // 마지막 → 첫 슬라이드 순환
+      interval: 5000,   // Auto switch every 5 seconds
+      ride: 'carousel', // Start automatically on page load
+      pause: false,     // Do not pause on hover
+      wrap: true        // Loop from last to first slide
     });
   }
 });
