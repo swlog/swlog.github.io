@@ -59,4 +59,4 @@ Through various projects in <strong>search algorithms</strong>, <strong>natural 
   </div>
 </div>
 
-For more details, please visit the [About Page](/about/).
+For more details, please visit the [About Page](/en/about/).
