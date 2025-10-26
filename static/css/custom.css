@@ -1,3 +1,106 @@
+/* 🎨 Logo Custom Style */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2c3e50 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #007bff !important;
+  text-decoration: none;
+}
+
+/* 다크모드에서의 로고 스타일 */
+[data-theme="dark"] .navbar-brand {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .navbar-brand:hover {
+  color: #66b3ff !important;
+}
+
+/* 로고 텍스트 강제 변경 */
+.navbar-brand::after {
+  content: "최서원";
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.navbar-brand {
+  font-size: 0 !important;
+  color: transparent !important;
+}
+
+[data-theme="dark"] .navbar-brand::after {
+  color: #ffffff;
+}
+
+/* 📝 Text Justification */
+/* 본문 텍스트 양쪽 정렬 - 더 구체적인 선택자 사용 */
+.article-style p,
+.article-style div,
+.article-style section p,
+.article-style section div,
+p:not(.hero-subtitle):not(.powered-by):not(.copyright-license-text),
+div:not(.hero-content):not(.hero-section):not(.navbar):not(.dropdown):not(.nav-icons):not(.page-footer):not(.site-footer):not(.container):not(.row):not(.col-12) {
+  text-align: justify !important;
+  text-justify: inter-ideograph; /* 한글 최적화 */
+  line-height: 1.7; /* 가독성 향상 */
+}
+
+/* 프로젝트 설명 텍스트 양쪽 정렬 */
+.home-section p,
+.home-section div:not(.hero-content):not(.hero-section),
+section p,
+section div:not(.hero-content):not(.hero-section) {
+  text-align: justify !important;
+  text-justify: inter-ideograph;
+  line-height: 1.6;
+}
+
+/* 자기소개 섹션 양쪽 정렬 */
+.about-section p,
+.about-section div {
+  text-align: justify !important;
+  text-justify: inter-ideograph;
+  line-height: 1.7;
+}
+
+/* 모든 문단에 양쪽 정렬 적용 (제외 요소 제외) */
+body p:not(.hero-subtitle):not(.powered-by):not(.copyright-license-text):not(.navbar-brand) {
+  text-align: justify !important;
+  text-justify: inter-ideograph;
+  line-height: 1.6;
+}
+
+/* 제목과 버튼은 중앙/왼쪽 정렬 유지 */
+h1, h2, h3, h4, h5, h6,
+.hero-title, .hero-subtitle,
+.btn, .button, .card-title,
+.navbar-brand,
+.powered-by {
+  text-align: inherit !important;
+}
+
+/* 리스트 아이템은 왼쪽 정렬 유지 */
+ul, ol, li {
+  text-align: left !important;
+}
+
+/* 코드 블록은 왼쪽 정렬 유지 */
+pre, code, .highlight {
+  text-align: left !important;
+}
+
+/* 푸터는 중앙 정렬 유지 */
+.site-footer,
+.powered-by,
+.copyright-license-text {
+  text-align: center !important;
+}
+
 /* 🎨 Project Card Custom Style */
 .project-card .card {
   background: #fff;
