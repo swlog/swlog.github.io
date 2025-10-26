@@ -115,7 +115,7 @@ sections:
         
         **기술 스택:** Python, tkinter, GUI 프로그래밍
         
-        [자세히 보기 →](/project/01-가위바위보/)
+        [자세히 보기 →](/project/01-rps/)
     design:
       background:
         color: "#f8f9fa"
@@ -139,7 +139,7 @@ sections:
         
         **기술 스택:** Python, 자연어처리, 머신러닝, 데이터분석
         
-        [자세히 보기 →](/project/02-영화리뷰/)
+        [자세히 보기 →](/project/02-movie/)
     design:
       background:
         color: "#ffffff"
@@ -187,7 +187,7 @@ sections:
         
         **기술 스택:** Python, AI, 미니맥스 알고리즘, 게임 트리
         
-        [자세히 보기 →](/project/04-오목/)
+        [자세히 보기 →](/project/04-omok/)
     design:
       background:
         color: "#ffffff"
